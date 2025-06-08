@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section-one-about {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/front-view-desk-concept-with-copy-space.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.section-two-about{
+    height: 30vh;
+    width: 100%;
+    background-color: rgba(233, 165, 8, 255);
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section-two-about div{
+    text-align: center;
+}
+
+.section-two-about div h1{
+    font-size: 130px;
+}
+.section-two-about div p{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.section-three-about{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three-about p{
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 0 25vw 0 25vw;
+    text-align: justify;
+}

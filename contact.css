@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Section One */
+
+.section-one-contact {
+    height: 100vh;
+    width: 100%;
+    background-image: url(contact/WhatsApp\ Image\ 2025-06-03\ at\ 12.22.45\ AM.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Section Two */
+
+.section-two-contact {
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(233, 165, 8, 255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-two-contact .text h1 {
+    color: black;
+    font-size: 48px;
+    padding-left: 150px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-two-contact .text h1 .white {
+    color: white;
+}
+
+.section-two-contact .text .email-box {
+    background-color: black;
+    font-size: 22px;
+    border-radius: 0 20px 20px 0;
+    width: 50%;
+    padding: 15px 0 15px 150px;
+
+}
+
+.section-two-contact .text .email-box a {
+    text-decoration: none;
+    color: rgba(233, 165, 8, 255);
+}
+
+.section-two-contact .text .email-box a:hover{
+    text-decoration: underline;
+}
+/* Section Three */
+
+.section-three-contact {
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-three-contact .contact-form {
+    width: 400px;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-three-contact label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+
+.section-three-contact .name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.section-three-contact input,
+.section-three-contact textarea {
+    border: 2px solid rgba(233, 165, 8, 255);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section-three-contact .name-fields input {
+    width: 100%;
+}
+
+.section-three-contact textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.section-three-contact button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background-color: rgba(233, 165, 8, 255);
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.section-three-contact button:hover {
+    background-color: darkorange;
+}

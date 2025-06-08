@@ -1,0 +1,176 @@
+
+
+.section-one {
+    height: calc(100vh - 10vh);
+    background-color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.header-heading h1 {
+    font-size: 6rem !important;
+    font-weight: 900;
+    color: black;
+}
+
+.section-two-content {
+    height: 90vh;
+    background-color: #d69f00;
+}
+
+.section-two-image img {
+    text-align: center;
+    width: 70%;
+}
+
+.section-two-text {
+    text-align: justify;
+}
+
+.section-two-text h4 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.section-two-text h1 {
+    color: black;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.section-two-text p {
+    color: black;
+    font-size: 1rem;
+}
+
+.section-title {
+    height: 30vh;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+.section-title h1 span {
+    color: #d69f00;
+}
+
+.section-three-content {
+    height: 90vh;
+    background-color: white;
+}
+
+.sms-text {
+    text-align: left;
+    padding-right: 100px !important;
+}
+
+.sms-text p {
+    font-size: 1rem;
+    color: black;
+}
+
+.highlight-yellow {
+    color: #d69f00 !important;
+    font-size: 2rem !important;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.large-first {
+    color: #d69f00 !important;
+    font-size: 4rem !important;
+    font-weight: 900;
+}
+
+.strategy-image img {
+    width: 100%;
+    text-align: center;
+}
+
+.section-four-content {
+    height: 90vh;
+    background-color: #d69f00;
+}
+
+.ccm-text {
+    padding-right: 100px !important;
+}
+
+.ccm-text h4 {
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ccm-text h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.ccm-text p {
+    color: black;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.section-five-content {
+    height: 90vh;
+    background-color: white;
+}
+
+.sma-text {
+    text-align: left;
+    padding-right: 100px !important;
+}
+
+.sma-text h1 {
+    color: black;
+    font-size: 2rem;
+}
+
+.sma-text h2 {
+    font-size: 1.8rem;
+    color: #d69f00;
+}
+
+.sma-text p {
+    color: #d69f00;
+    font-size: 1rem;
+}
+
+.section-six-content {
+    height: 90vh;
+    background-color: #d69f00;
+}
+
+.im-text {
+    text-align: left;
+    padding-right: 100px !important;
+}
+
+.im-text h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.im-text h2 {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.im-text p {
+    color: black;
+    font-size: 1rem;
+}
