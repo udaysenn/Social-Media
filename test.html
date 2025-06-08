@@ -1,113 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Section</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <style>
-        @font-face {
-            font-family: 'BoldFont';
-            src: url('fonts/BoldFont.ttf') format('truetype');
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+    }
 
-        @font-face {
-            font-family: 'BodyFont';
-            src: url('fonts/BodyFont.ttf') format('truetype');
-        }
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'BodyFont', sans-serif;
-        }
-
-        .section {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: stretch;
-            min-height: 100vh;
-        }
-
-        .left {
-            flex: 1;
-            background-color: #fff;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .left h1 {
-            font-family: 'BoldFont', sans-serif;
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .left p {
-            background-color: #e7a506;
-            color: white;
-            font-size: 1.2rem;
-            padding: 20px;
-            border-radius: 4px;
-            font-family: 'BodyFont', sans-serif;
-        }
-
-        .right {
-            flex: 1;
-            background-color: #fff;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        input,
-        textarea,
-        button {
-            background-color: #e7a506;
-            border: none;
-            padding: 12px 16px;
-            font-size: 1rem;
-            border-radius: 6px;
-            font-family: 'BodyFont', sans-serif;
-        }
-
-        input::placeholder,
-        textarea::placeholder {
-            color: #333;
-        }
-
-        button {
-            cursor: pointer;
-            font-weight: bold;
-        }
-    </style>
+    .image-text {
+      position: absolute;
+      top: 50%;               /* center vertically */
+      left: 50%;              /* center horizontally */
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
-
 <body>
 
-    <section class="section">
-        <div class="left">
-            <h1>WE ARE ALWAYS HERE<br>TO HELP YOU</h1>
-            <p>With us, your challenges become opportunities for growth.</p>
-        </div>
-
-        <div class="right">
-            <div style="display: flex; gap: 10px;">
-                <input type="text" placeholder="Your Name" style="flex:1">
-                <input type="email" placeholder="Email Address" style="flex:1">
-            </div>
-            <div style="display: flex; gap: 10px;">
-                <input type="tel" placeholder="Phone Number" style="flex:1">
-                <input type="text" placeholder="Subject" style="flex:1">
-            </div>
-            <textarea placeholder="Write message" rows="5" style="width: 100%;"></textarea>
-            <button>Send Inquiry</button>
-        </div>
-    </section>
+  <div class="image-container">
+    <img src="/assets/front-view-desk-concept-with-copy-space.jpg" alt="Image" />
+    <div class="image-text">Your Text Here</div>
+  </div>
 
 </body>
-
 </html>

@@ -1,0 +1,349 @@
+@import url(/style.css);
+
+/* Section One */
+.section-one-services {
+    height: 90vh;
+    background-color: white;
+}
+
+.section-one-services .container {
+    text-align: center;
+}
+
+.section-one-services img {
+    width: 50%;
+}
+
+.section-one-services h1 {
+    font-family: "Gilroy-Bold";
+    font-size: 120px;
+    line-height: 0.9;
+}
+
+/* Section Two */
+.section-two-services {
+    height: 100vh;
+    background-color: rgba(233, 165, 8, 255);
+}
+
+.section-two-services .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.section-two-services .container div {
+    flex: 1;
+}
+
+.section-two-services img {
+    width: 100%;
+}
+
+.section-two-services .text {
+    text-align: justify;
+    padding-right: 7%;
+}
+
+.section-two-services h1 {
+    color: white;
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+
+}
+
+.section-two-services h2 {
+    color: black;
+    font-family: "Gilroy-Black";
+    font-size: 50px;
+
+}
+
+.section-two-services p {
+    color: black;
+    font-family: "Gilroy-Regular";
+    font-size: 24px;
+}
+
+/* Section Three */
+
+.section-three-services {
+    height: 130vh;
+    background-color: white;
+}
+
+.section-three-services .heading {
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three-services .heading h1 {
+    font-family: "Gilroy-Bold";
+    font-size: 64px;
+}
+
+.section-three-services .heading span {
+    color: rgba(233, 165, 8, 255);
+}
+
+.section-three-services .container {
+    height: calc(130vh - 30vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.section-three-services .container .text {
+    padding-left: 7%;
+}
+
+.section-three-services .container .text h1 {
+    color: rgba(233, 165, 8, 255);
+    font-family: "Gilroy-Black";
+    font-size: 34px;
+}
+
+.section-three-services .container .text p {
+    color: black;
+    font-family: "Gilroy-Regular";
+    font-size: 22px;
+}
+
+.section-three-services .container .text p span {
+    color: rgba(233, 165, 8, 255);
+    font-family: "Gilroy-Black";
+    font-size: 82px;
+}
+
+.section-three-services .container img {
+    max-width: 100%;
+}
+
+
+/* Section Four */
+
+.section-four-services {
+    height: 130vh;
+    background-color: white;
+}
+
+.section-four-services .heading {
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-four-services .heading h1 {
+    font-family: "Gilroy-Bold";
+    font-size: 64px;
+}
+
+.section-four-services .heading span {
+    color: rgba(233, 165, 8, 255);
+}
+
+.section-four-services .container {
+    background-color: rgba(233, 165, 8, 255);
+    height: calc(130vh - 30vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.section-four-services .container .text,
+.section-four-services .container .image {
+    flex: 1;
+}
+
+
+.section-four-services .container .text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-four-services .container .text h1 {
+    font-family: "Gilroy-Bold";
+    color: black;
+    font-size: 34px;
+}
+
+.section-four-services .container .text h2 {
+    font-family: "Gilroy-Black";
+    color: white;
+    font-size: 80px;
+}
+
+.section-four-services .container .text p {
+    font-family: "Gilroy-Regular";
+    color: black;
+    font-size: 22px;
+    text-align: left;
+    padding: 15%;
+}
+
+.section-four-services .container .image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-four-services .container .image img {
+    max-width: 100%;
+}
+
+/* Section Five */
+
+.section-five-services {
+    height: 130vh;
+    background-color: white;
+}
+
+.section-five-services .heading {
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-five-services .heading h1 {
+    font-family: "Gilroy-Bold";
+    font-size: 64px;
+}
+
+.section-five-services .heading span {
+    color: rgba(233, 165, 8, 255);
+}
+
+.section-five-services .container {
+    background-color: white;
+    height: calc(130vh - 30vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+/* .section-five-services .container .text, */
+.section-five-services .container .image {
+    flex: 1.5;
+}
+
+.section-five-services .container .text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7%;
+}
+
+.section-five-services .container .text h1 {
+    font-family: "Gilroy-Bold";
+    color: black;
+    font-size: 32px;
+}
+
+.section-five-services .container .text p {
+    color: rgba(233, 165, 8, 255);
+    font-family: "Gilroy-Regular";
+    color: rgba(233, 165, 8, 255);
+    font-size: 22px;
+    text-align: left;
+    padding: 0;
+}
+
+.section-five-services .container .text p span {
+    font-family: "Gilroy-Bold";
+    font-size: 32px;
+}
+
+.section-five-services .container .image img {
+    max-width: 100%;
+}
+
+/* Section Six */
+
+.section-six-services {
+    height: 130vh;
+}
+
+.section-six-services .heading {
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-six-services .heading h1 {
+    font-family: "Gilroy-Bold";
+    font-size: 64px;
+}
+
+.section-six-services .heading span {
+    color: rgba(233, 165, 8, 255);
+}
+
+.section-six-services .container {
+    background-color: rgba(233, 165, 8, 255);
+    height: calc(130vh - 30vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+/* .section-six-services .container .text, */
+.section-six-services .container .image {
+    flex: 1.5;
+}
+
+.section-six-services .container .text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7%;   
+}
+
+.section-six-services .container .text h1 {
+    font-family: "Gilroy-Bold";
+    color: white;
+    font-size: 32px;
+}
+
+.section-six-services .container .text p {
+    font-family: "Gilroy-Regular";
+    color: black;
+    font-size: 22px;
+    text-align: left;
+    padding: 0;
+}
+
+.section-six-services .container .text p span {
+    font-family: "Gilroy-Bold";
+    font-size: 32px;
+}
+
+.section-six-services .container .image img {
+    max-width: 100%;
+}

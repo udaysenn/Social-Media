@@ -1,43 +1,4 @@
-@font-face {
-    font-family: "Absolut";
-    src: url(/home/Font/Absolut_Pro_Black.otf);
-}
-
-@font-face {
-    font-family: "astralaga";
-    src: url(/home/Font/astralaga-regular.ttf);
-}
-
-@font-face {
-    font-family: "Gilroy-Black";
-    src: url(/home/Font/Gilroy-Black_0.ttf);
-}
-
-@font-face {
-    font-family: "Gilroy-Bold";
-    src: url(/home/Font/Gilroy-Bold_0.ttf);
-}
-
-@font-face {
-    font-family: "Gilroy-Medium";
-    src: url(/home/Font/Gilroy-Medium_0.ttf);
-}
-
-@font-face {
-    font-family: "Gilroy-Regular";
-    src: url(/home/Font/Gilroy-Regular_0.ttf);
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(/home/Font/Montserrat\ Semi\ Bold.OTF);
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url(/style.css);
 
 /* Section One */
 .section-one-home {
@@ -49,15 +10,19 @@
 .section-one-home .container {
     height: 95vh;
     background-color: rgba(233, 165, 8, 255);
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    position: relative;
+    text-align: center;
 }
 
 .section-one-home .container img {
     max-width: 100%;
     max-height: 100%;
 }
+
+
 
 /* Section Two */
 .section-two-home {
@@ -302,7 +267,7 @@
     padding: 10px;
 }
 
-.section-six-home .middle .contact-form .row{
+.section-six-home .middle .contact-form .row {
     display: flex;
     gap: 10px;
 }
@@ -311,24 +276,26 @@
     width: 40%;
 }
 
-.section-six-home .middle .contact-form input ,
-.section-six-home .middle .contact-form textarea ,
+.section-six-home .middle .contact-form input,
+.section-six-home .middle .contact-form textarea,
 .section-six-home .middle .contact-form button {
     background-color: rgba(233, 165, 8, 255);
     border: none;
     border-radius: 10px;
     padding: 12px 16px;
 }
-.section-six-home .middle .contact-form textarea{
-    width: 90%;
-    
-}
-input::placeholder,
-textarea::placeholder{
-    color: black;
-}   
 
-.section-six-home .middle button{
+.section-six-home .middle .contact-form textarea {
+    width: 90%;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: black;
+}
+
+.section-six-home .middle button {
     width: fit-content;
     cursor: pointer;
     color: black;
@@ -347,18 +314,18 @@ textarea::placeholder{
     background-size: cover;
     line-height: 0.9;
 }
-.section-seven-home .container{
+
+.section-seven-home .container {
     padding: 100px 0 0 800px;
 }
-.section-seven-home h1{
+
+.section-seven-home h1 {
     font-family: "Gilroy-Bold";
     font-size: 120px;
 }
 
-.section-seven-home h2{
+.section-seven-home h2 {
     font-family: "Gilroy-Black";
     color: rgba(233, 165, 8, 255);
     font-size: 200px;
 }
-
-
