@@ -1,0 +1,51 @@
+@import url(/style.css);
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: black;
+}
+
+.logo img {
+    width: 10%;
+}
+
+.navlinks {
+    display: flex;
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 2.5rem;
+    font-size: 1rem;
+    letter-spacing: .03rem;
+    position: relative;
+}
+
+.navlinks li a::after,
+.navlinks li .active::after {
+    content: "";
+    background: rgba(233, 165, 8, 255);
+    position: absolute;
+    height: .15rem;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .5s ease;
+    transform-origin: right;
+}
+
+.navlinks li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
