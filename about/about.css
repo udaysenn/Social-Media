@@ -1,15 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import url(/style.css);
+
+/* Section One */
 .section-one-about {
     height: 100vh;
     width: 100%;
-    background-image: url(assets/front-view-desk-concept-with-copy-space.jpg);
+    background-image: url(/assets/about/front-view-desk-concept-with-copy-space.jpg);
     background-position: bottom;
     background-size: cover;
+    text-align: center;
 }
-
+.section-one-about h1{
+    font-family: "Gilroy-Black";
+    color: rgba(233, 165, 8, 255);
+    font-size: 100px;
+    padding: 200px;
+}
+/* Section Two */
 .section-two-about{
     height: 30vh;
     width: 100%;
@@ -24,12 +30,16 @@
 }
 
 .section-two-about div h1{
+    font-family: Gilroy-Regular;
     font-size: 130px;
 }
 .section-two-about div p{
     font-size: 36px;
-    font-weight: 900;
+    font-family: Gilroy-Black;
+
 }
+
+/* Section Three */
 
 .section-three-about{
     height: 70vh;
@@ -42,8 +52,9 @@
 }
 
 .section-three-about p{
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.5;
     padding: 0 25vw 0 25vw;
     text-align: justify;
+    font-family: Gilroy-Regular;
 }
