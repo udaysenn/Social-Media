@@ -6,41 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/header/navbar.css">
+    <link rel="stylesheet" href="/footer/footer.css">
 </head>
 
 <body>
 
-    <!-- Navbar
+    <!-- Navbar -->
 
     <nav>
-        <div class="logo"><img src="/assets/Logo/hcf_logo_white.png">
+        <div class="logo">
+            <img src="/assets/Logo/hcf_logo_white.png">
         </div>
         <ul class="navlinks" id="navlinks">
             <li>
-                <a href="/index.html" class="active"><b>HOME</b></a>    
+                <a href="/home/home.html" class="active"><b>HOME</b></a>
             </li>
             <li>
-                <a href="/about.html">ABOUT US</a>
+                <a href="/about/about.html">ABOUT US</a>
             </li>
             <li>
-                <a href="/services.html">SERVICES</a>
+                <a href="/services/services.html">SERVICES</a>
             </li>
             <li>
                 <a href="#ourprojects">OUR PROJECTS</a>
             </li>
             <li>
-                <a href="/contact.html">CONTACT US</a>
+                <a href="/contact/contact.html">CONTACT US</a>
             </li>
         </ul>
-        <div style="color: white;"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></div>
-        <div class="hamburger" id="hamburger">
-            <div class="line">
+        <!-- <div class="social-link">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a> 
+        </div> -->
 
-            </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-    </nav> -->
+    </nav>
 
     <!-- Home Page -->
 
@@ -171,58 +178,86 @@
     </section>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer-container">
-            <div class="footer-logo">
-                <img src="assets/Logo/hcf_logo_white.png">
+            <div class="logo">
+                <img src="/assets/Logo/hcf_logo_white.png">
                 <div class="social-icons">
-                    <i class="fab fa-whatsapp"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-behance"></i>
-                    <i class="fab fa-linkedin-in"></i>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
 
-            <div class="footer-section">
-                <h3>EXPLORE</h3>
+            <div class="explore">
+                <h1>EXPLORE</h1>
                 <ul>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Our Projects</li>
-                    <li>Contact Us</li>
+                    <a href="#">
+                        <li>About Us</li>
+                    </a>
+                    <a href="#">
+                        <li>Services</li>
+                    </a>
+                    <a href="#">
+                        <li>Our Projects</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact Us</li>
+                    </a>
                 </ul>
             </div>
 
-            <div class="footer-section">
-                <h3>SERVICES</h3>
+            <div class="services">
+                <h1>SERVICES</h1>
                 <ul>
-                    <li>Performance Marketing Services</li>
-                    <li>Product Shoots</li>
-                    <li>Search Engine Optimisation</li>
-                    <li>Social Media Marketing</li>
-                    <li>Website Design</li>
+                    <a href="">
+                        <li>Performance Marketing Services</li>
+                    </a>
+                    <a href="">
+                        <li>Product Shoots</li>
+                    </a>
+                    <a href="">
+                        <li>Search Engine Optimisation</li>
+                    </a>
+                    <a href="">
+                        <li>Social Media Marketing</li>
+                    </a>
+                    <a href="">
+                        <li>Website Design</li>
+                    </a>
                 </ul>
             </div>
 
-            <div class="footer-contact">
-                <h3>CONTACT</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 303/304, Aryan Workspaces,<br> Off CG Road, Ahmedabad - 380009
-                </p>
-                <p><i class="fas fa-phone"></i> +91 97257 21611</p>
-                <p><i class="fas fa-envelope"></i> hello@hcfglobal.co</p>
-                <form class="subscribe-form">
-                    <input type="email" placeholder="your e-mail address" />
-                    <button type="submit">connect</button>
+            <div class="contact">
+                <h1>CONTACT</h1>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 303/304, Aryan Workspaces,<br> Off CG Road, Ahmedabad -
+                        380009</li>
+                    <li><i class="fas fa-phone"></i> +91 97257 21611</li>
+                    <li><i class="fas fa-envelope"></i> hello@hcfglobal.co</li>
+                </ul>
+                <p></p>
+                <p></p>
+                <p></p>
+
+            </div>
+            <div class="contact-form">
+                <form >
+                    <input type="email" placeholder="your e-mail address" /><br>
+                    <button>connect</button>
                 </form>
-                <p class="see-map">SEE ON MAP</p>
+                <h1 class="see-map">SEE ON MAP</h1>
             </div>
         </div>
         <div class="footer-bottom">
             <p>© 2025 HCF (Hetarsh Creative Force) Ahmedabad</p>
         </div>
-    </footer> -->
+
+    <script src="/header/main.js"></script>
+
 
 </body>
 
