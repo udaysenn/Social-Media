@@ -9,7 +9,7 @@ nav .container{
     width: 100% ;
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -47,4 +47,13 @@ nav .container{
 .navlinks a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+nav .social-links{
+    display: flex;
+}
+nav .social-links a {
+    font-size: 20px;
+    margin-right: 20%;
+    color: white;
 }
