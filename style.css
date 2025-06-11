@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "Agenor";
+    src: url(/Font/Agenor-Black.ttf);
+}
+
+@font-face {
     font-family: "astralaga";
     src: url(/Font/astralaga-regular.ttf);
 }
@@ -29,12 +34,22 @@
 }
 
 @font-face {
-    font-family: "Montserrat";
+    font-family: "Gilroy-Light";
+    src: url(/Font/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: "Montserrat-Semi";
     src: url(/Font/Montserrat\ Semi\ Bold.OTF);
+}
+@font-face {
+    font-family: "Montserrat-Variable";
+    src: url(/Font/Montserrat-VariableFont_wght.ttf);
 }
 
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }

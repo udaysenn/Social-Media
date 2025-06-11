@@ -1,0 +1,278 @@
+@import url(/style.css);
+
+/* Section One */
+
+.section-one-work {
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+/* Section Two */
+
+.section-two-work {
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+}
+
+/* Section Three */
+.section-three-work {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.section-three-work .top {
+    border: 2px solid black;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.section-three-work .top .box-1 {
+    width: 350px;
+    height: 350px;
+    background-color: green;
+    text-align: left;
+}
+
+.section-three-work .top .box-2 {
+    width: 400px;
+    height: 400px;
+    border: 2px solid yellow;
+    position: relative;
+    left: 50%;
+
+}
+
+/* Section Four */
+
+.section-four-work {
+    width: 100%;
+    height: 290vh;
+    background-color: white;
+}
+.section-four-work .container {
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+}
+.section-four-work .container .empty-background {
+    position: relative;
+    top: 40vh;
+    width: 100%;
+    height: 60vh;
+    background-color: orange;
+}
+
+.section-four-work .content {
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+
+.section-four-work .content .row-1 {
+    display: flex;
+}
+.section-four-work .content .row-1 .col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.section-four-work .content .row-1 .col-2 img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.section-four-work .content .row-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+    margin-top: 4%;
+}
+
+.section-four-work .content .row-2 img {
+    max-width: 100%;
+}
+
+.section-four-work .content .row-3 {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
+}
+
+.section-four-work .content .row-3 .col-1 img {
+    max-width: 100%;
+}
+
+.section-four-work .content .row-3 .col-2 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.section-four-work .content .row-3 .col-2 .para p {
+    padding: 10%;
+    font-size: 34px;
+}
+
+.section-four-work .content .row-3 .col-2 .img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
+    align-items: center;
+}
+
+.section-four-work .content .row-3 .col-2 .img img {
+    max-width: 100%;
+}
+
+.section-four-work .content .row-4 {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
+}
+
+.section-four-work .content .row-4 .col-1 p {
+    padding: 10% 10% 0 15%;
+}
+
+.section-four-work .content .row-4 .col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
+}
+
+.section-four-work .content .row-4 .col-2 img {
+    max-width: 100%;
+}
+
+
+/* Section Five */
+
+.section-five-work {
+    width: 100%;
+    height: 30vh;
+    background-color: red;
+    font-family: "Gilroy-Bold";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.section-five-work div {
+    text-align: center;
+}
+
+.section-five-work div h1 {
+    font-size: 110px;
+}
+
+.section-five-work div p {
+    font-size: 34px;
+}
+
+/* Section Six */
+.section-six-work {
+    width: 100%;
+    height: 315vh;
+    background-color: white;
+}
+
+.section-six-work .container {
+    width: 100%;
+    height: 120vh;
+    background-image: url(/assets/Work/Copy\ of\ 331A8931.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.section-six-work .content {
+    width: 70%;
+    position: relative;
+    top: 25%;
+    left: 15%;
+    background-color: white;
+    padding: 3%;
+
+}
+
+.section-six-work .content .row-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 4%;
+}
+
+.section-six-work .content .row-1 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section-six-work .content .row-2 {
+    margin: 4%;
+    font-family: "Gilroy-Medium";
+}
+
+.section-six-work .content .row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+}
+
+.section-six-work .content .row-3 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section-six-work .content .row-4 {
+    margin: 4% 4% 0 4%;
+    font-family: "Gilroy-Medium";
+    color: rgb(210, 62, 112);
+
+}
+
+/* Section Seven */
+
+.section-seven-work {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+.section-seven-work .one,
+.section-seven-work .three {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-seven-work .one img,
+.section-seven-work .three img {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.section-seven-work .two img,
+.section-seven-work .four img {
+    max-height: 100%;
+}
+
+.section-seven-work .four {
+    flex: 1;
+}
+
+.section-seven-work .four img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+
+}
