@@ -269,11 +269,12 @@
 
 .section-six-home .middle .contact-form .row {
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
 .section-six-home .middle .contact-form input {
-    width: 40%;
+    width: 43%;
 }
 
 .section-six-home .middle .contact-form input,
