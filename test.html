@@ -1,120 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Brand Style Guide</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typography Section</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+      background-color: #fff;
       color: #000;
     }
 
-    .container {
+    .main-container {
       display: flex;
-      flex-wrap: wrap;
+      align-items: flex-start; /* Align items to top */
+      justify-content: space-between;
       gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      flex: 1;
+      min-width: 300px;
     }
 
     .typography-box {
-      background-color: #e30613;
+      background-color: #e50019;
       color: white;
-      padding: 40px;
-      width: 300px;
+      padding: 30px;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
-    .typography-box h2 {
+    .typography-box h5 {
+      letter-spacing: 3px;
       font-size: 14px;
-      letter-spacing: 2px;
-      font-weight: normal;
       margin-bottom: 10px;
     }
 
     .typography-box h1 {
       font-size: 32px;
       font-weight: bold;
-      margin: 0;
       line-height: 1.2;
     }
 
     .description {
+      font-size: 14px;
+      line-height: 1.6;
       max-width: 300px;
     }
 
-    .description p {
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .swatches {
-      border: 2px solid gold;
-      padding: 20px;
+    .right {
+      flex: 1;
+      min-width: 300px;
       display: flex;
+      flex-direction: column;
       gap: 20px;
     }
 
+    .highlight-text {
+      font-size: 20px;
+      font-weight: 600;
+      color: #d6006d;
+    }
+
     .color-box {
-      width: 100px;
-      height: 200px;
-      color: #000;
-      font-size: 10px;
+      display: flex;
+      gap: 20px;
+      border: 2px solid #ffcc00;
+      padding: 20px;
+    }
+
+    .color {
+      flex: 1;
+      height: 180px;
+      position: relative;
       display: flex;
       align-items: flex-end;
-      padding: 5px;
-    }
-
-    .yellow {
-      background-color: #fcb813;
-    }
-
-    .red {
-      background-color: #e30613;
-      color: #fff;
-    }
-
-    .sample-text {
-      color: #d60084;
-      font-size: 20px;
+      padding: 10px;
+      font-size: 10px;
       font-weight: bold;
-      max-width: 300px;
+      color: #000;
+    }
+
+    .color.yellow {
+      background-color: #fcb814;
+    }
+
+    .color.red {
+      background-color: #e50019;
+    }
+
+    .color span {
+      font-size: 10px;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-
-    <!-- Typography Box -->
-    <div class="typography-box">
-      <h2>TYPOGRAPHY</h2>
-      <h1>AGENOR<br>FAMILY</h1>
-    </div>
-
-    <!-- Sample Text -->
-    <div class="sample-text">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing
-    </div>
-
-    <!-- Color Swatches -->
-    <div class="swatches">
-      <div class="color-box yellow">
-        RGB 252 | 184 | 19<br>
-        CMYK 0 | 10 | 100 | 0<br>
-        PANTONE approx
+  <div class="main-container">
+    <!-- Right Section FIRST (appears left visually due to flex order) -->
+    <div class="right">
+      <div class="highlight-text">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing
       </div>
-      <div class="color-box red">
-        RGB 227 | 6 | 19<br>
-        CMYK 0 | 100 | 100 | 0<br>
-        PANTONE approx
+      <div class="color-box">
+        <div class="color yellow">
+          <span>
+            RGB 245 | 161 | 38<br/>
+            CMYK 0 | 10 | 100<br/>
+            PANTONE BLACK C
+          </span>
+        </div>
+        <div class="color red">
+          <span>
+            RGB 245 | 31 | 38<br/>
+            CMYK 0 | 100 | 100<br/>
+            PANTONE BLACK C
+          </span>
+        </div>
       </div>
     </div>
 
-    <!-- Description -->
-    <div class="description">
-      <p>For Real Namkeen, we took two fonts – <strong>_____</strong> and <strong>_____</strong> – adds some fun in the brand – while the simple typeface is always appreciated, a little bit of fun is what adds the charm to the brand's social media.</p>
+    <!-- Left Section -->
+    <div class="left">
+      <div class="typography-box">
+        <h5>TYPOGRAPHY</h5>
+        <h1>AGENOR<br/>FAMILY</h1>
+      </div>
+      <div class="description">
+        For Real Namkeen, we took two fonts — ____ and ____ — adds some fun in the brand – while the simple typeface is always appreciated, a little bit of fun is what adds the charm to the brand’s social media.
+      </div>
     </div>
-
   </div>
 
 </body>
