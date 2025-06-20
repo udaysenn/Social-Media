@@ -2,348 +2,652 @@
 
 /* Section One */
 .section-one-services {
-    height: 90vh;
+    height: 100%;
+    width: 100vw;
     background-color: white;
-}
-
-.section-one-services .container {
     text-align: center;
 }
 
-.section-one-services img {
-    width: 50%;
-}
-
-.section-one-services h1 {
+.section-one-services>h1 {
     font-family: "Gilroy-Bold";
-    font-size: 120px;
+    font-size: 8vw;
     line-height: 0.9;
 }
 
 /* Section Two */
 .section-two-services {
-    height: 100vh;
-    background-color: rgba(233, 165, 8, 255);
-}
-
-.section-two-services .container {
     height: 100%;
+    width: 100vw;
+    background-color: rgba(233, 165, 8, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 5%;
+    padding: 0 5vw;
 }
 
-.section-two-services .container div {
-    flex: 1;
+.section-two-services>.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-two-services img {
-    width: 100%;
+.section-two-services>.image img {
+    width: 36vw;
 }
 
-.section-two-services .text {
+.section-two-services>.text {
     text-align: justify;
-    padding-right: 7%;
+    padding-right: 6vw;
 }
 
-.section-two-services h1 {
+.section-two-services>.text h1 {
     color: white;
     font-family: "Gilroy-Bold";
-    font-size: 34px;
+    font-size: 2vw;
 
 }
 
-.section-two-services h2 {
+.section-two-services>.text h2 {
     color: black;
     font-family: "Gilroy-Black";
-    font-size: 50px;
+    font-size: 3vw;
 
 }
 
-.section-two-services p {
+.section-two-services>.text p {
     color: black;
     font-family: "Gilroy-Regular";
-    font-size: 24px;
+    font-size: 1.5vw;
 }
 
 /* Section Three */
 
 .section-three-services {
-    height: 130vh;
+    height: 100%;
+    width: 100vw;
     background-color: white;
 }
 
-.section-three-services .heading {
-    height: 30vh;
+.section-three-services>.heading {
+    width: 100vw;
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-.section-three-services .heading h1 {
+.section-three-services>.heading h1 {
     font-family: "Gilroy-Bold";
-    font-size: 64px;
+    font-size: 6vw;
+    padding: 2vw;
 }
 
-.section-three-services .heading span {
+.section-three-services>.heading span {
     color: rgba(233, 165, 8, 255);
 }
 
-.section-three-services .container {
-    height: calc(130vh - 30vh);
+.section-three-services>.container {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 5%;
+    padding: 0 5vw;
 }
 
-.section-three-services .container .text {
-    padding-left: 7%;
+.section-three-services>.container .text {
+    padding-left: 5vw;
 }
 
-.section-three-services .container .text h1 {
+.section-three-services>.container .text h1 {
     color: rgba(233, 165, 8, 255);
     font-family: "Gilroy-Black";
-    font-size: 34px;
+    font-size: 2vw;
 }
 
-.section-three-services .container .text p {
+
+.section-three-services>.container .text p {
     color: black;
     font-family: "Gilroy-Regular";
-    font-size: 22px;
+    font-size: 1.4vw;
 }
 
-.section-three-services .container .text p span {
+.section-three-services>.container .text p span {
     color: rgba(233, 165, 8, 255);
     font-family: "Gilroy-Black";
-    font-size: 82px;
+    font-size: 7vw;
 }
 
-.section-three-services .container img {
-    max-width: 100%;
+.section-three-services>.container .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three-services>.container .image img {
+    width: 50vw;
 }
 
 
 /* Section Four */
 
 .section-four-services {
-    height: 130vh;
+    height: 100%;
+    width: 100vw;
     background-color: white;
 }
 
-.section-four-services .heading {
-    height: 30vh;
+.section-four-services>.heading {
+    width: 100vw;
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-.section-four-services .heading h1 {
+.section-four-services>.heading h1 {
     font-family: "Gilroy-Bold";
-    font-size: 64px;
+    font-size: 5vw;
+    padding: 2.5vw;
 }
 
-.section-four-services .heading span {
+.section-four-services>.heading span {
     color: rgba(233, 165, 8, 255);
 }
 
-.section-four-services .container {
+.section-four-services>.container {
     background-color: rgba(233, 165, 8, 255);
-    height: calc(130vh - 30vh);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5%;
-}
-
-.section-four-services .container .text,
-.section-four-services .container .image {
-    flex: 1;
-}
-
-
-.section-four-services .container .text {
     height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3vw;
 }
 
-.section-four-services .container .text h1 {
-    font-family: "Gilroy-Bold";
+
+.section-four-services>.container .text {
+    text-align: center;
+    padding-left: 7vw;
+}
+
+.section-four-services>.container .text h1 {
+    font-family: "Gilroy-Black";
     color: black;
-    font-size: 34px;
+    font-size: 2vw;
 }
 
-.section-four-services .container .text h2 {
+.section-four-services>.container .text h2 {
     font-family: "Gilroy-Black";
     color: white;
-    font-size: 80px;
+    font-size: 5vw;
 }
 
-.section-four-services .container .text p {
+.section-four-services>.container .text p {
     font-family: "Gilroy-Regular";
     color: black;
-    font-size: 22px;
-    text-align: left;
-    padding: 15%;
+    font-size: 1.5vw;
+    text-align: justify;
+    margin-top: 5vh;
 }
 
-.section-four-services .container .image {
-    height: 100%;
+.section-four-services>.container .image {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.section-four-services .container .image img {
-    max-width: 100%;
+.section-four-services>.container .image img {
+    width: 50vw;
 }
 
 /* Section Five */
 
 .section-five-services {
-    height: 130vh;
+    height: 100%;
+    width: 100vw;
     background-color: white;
 }
 
-.section-five-services .heading {
-    height: 30vh;
+.section-five-services>.heading {
+    width: 100vw;
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-.section-five-services .heading h1 {
+.section-five-services>.heading h1 {
     font-family: "Gilroy-Bold";
-    font-size: 64px;
+    font-size: 6vw;
+    padding: 2vw;
 }
 
-.section-five-services .heading span {
+.section-five-services>.heading span {
     color: rgba(233, 165, 8, 255);
 }
 
-.section-five-services .container {
-    background-color: white;
-    height: calc(130vh - 30vh);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5%;
-}
-
-/* .section-five-services .container .text, */
-.section-five-services .container .image {
-    flex: 1.5;
-}
-
-.section-five-services .container .text {
+.section-five-services>.container {
     height: 100%;
+    background-color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 7%;
+    padding: 0 5vw;
 }
 
-.section-five-services .container .text h1 {
+.section-five-services>.container .text {
+    height: 100%;
+    padding-left: 5vw;
+    text-align: left;
+}
+
+.section-five-services>.container .text h1 {
     font-family: "Gilroy-Bold";
     color: black;
-    font-size: 32px;
+    font-size: 2vw;
 }
 
-.section-five-services .container .text p {
-    color: rgba(233, 165, 8, 255);
+.section-five-services>.container .text p {
     font-family: "Gilroy-Regular";
     color: rgba(233, 165, 8, 255);
-    font-size: 22px;
-    text-align: left;
-    padding: 0;
+    font-size: 1.3vw;
 }
 
-.section-five-services .container .text p span {
+.section-five-services>.container .text p span {
     font-family: "Gilroy-Bold";
-    font-size: 32px;
+    font-size: 2vw;
 }
 
-.section-five-services .container .image img {
-    max-width: 100%;
+.section-five-services>.container .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-five-services>.container .image img {
+    width: 50vw;
 }
 
 /* Section Six */
 
 .section-six-services {
-    height: 130vh;
+    height: 100%;
+    width: 100vw;
 }
 
-.section-six-services .heading {
-    height: 30vh;
+.section-six-services>.heading {
+    width: 100vw;
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-.section-six-services .heading h1 {
+.section-six-services>.heading h1 {
     font-family: "Gilroy-Bold";
-    font-size: 64px;
+    font-size: 6vw;
+    padding: 2vw;
 }
 
-.section-six-services .heading span {
+.section-six-services>.heading span {
     color: rgba(233, 165, 8, 255);
 }
 
-.section-six-services .container {
-    background-color: rgba(233, 165, 8, 255);
-    height: calc(130vh - 30vh);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5%;
-}
-
-/* .section-six-services .container .text, */
-.section-six-services .container .image {
-    flex: 1.5;
-}
-
-.section-six-services .container .text {
+.section-six-services>.container {
     height: 100%;
+    background-color: rgba(233, 165, 8, 255);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 7%;   
+    padding: 0 5vw;
 }
 
-.section-six-services .container .text h1 {
+.section-six-services>.container .text {
+    text-align: left;
+    padding-left: 7vw;
+}
+
+.section-six-services>.container .text h1 {
     font-family: "Gilroy-Bold";
     color: white;
-    font-size: 32px;
+    font-size: 2vw;
 }
 
-.section-six-services .container .text p {
+.section-six-services>.container .text p {
     font-family: "Gilroy-Regular";
     color: black;
-    font-size: 22px;
-    text-align: left;
-    padding: 0;
+    font-size: 1.3vw;
 }
 
-.section-six-services .container .text p span {
+.section-six-services>.container .text p span {
     font-family: "Gilroy-Bold";
-    font-size: 32px;
+    font-size: 2vw;
 }
 
-.section-six-services .container .image img {
-    max-width: 100%;
+.section-six-services>.container .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-six-services>.container .image img {
+    width: 50vw;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    /* Section One */
+    .section-one-services {
+        height: 100%;
+        width: 100vw;
+        background-color: white;
+        text-align: center;
+    }
+
+    .section-one-services>h1 {
+        font-family: "Gilroy-Bold";
+        font-size: 14vw;
+        line-height: 0.9;
+    }
+
+    /* Section Two */
+    .section-two-services {
+        height: 100%;
+        width: 100vw;
+        background-color: rgba(233, 165, 8, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5vw;
+    }
+
+    .section-two-services>.image img {
+        width: 80vw;
+    }
+
+    .section-two-services>.text {
+        text-align: justify;
+        padding: 0;
+        margin: 0 0 5vh 0;
+    }
+
+    .section-two-services>.text h1 {
+        color: white;
+        font-family: "Gilroy-Bold";
+        font-size: 4vw;
+
+    }
+
+    .section-two-services>.text h2 {
+        color: black;
+        font-family: "Gilroy-Black";
+        font-size: 6vw;
+
+    }
+
+    .section-two-services>.text p {
+        color: black;
+        font-family: "Gilroy-Regular";
+        font-size: 3vw;
+    }
+
+    /* Section Three */
+
+    .section-three-services {
+        height: 100%;
+        width: 100vw;
+        background-color: white;
+    }
+
+    .section-three-services>.heading {
+        width: 100vw;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .section-three-services>.heading h1 {
+        font-family: "Gilroy-Bold";
+        font-size: 7vw;
+        padding: 2vw;
+    }
+
+    .section-three-services>.heading span {
+        color: rgba(233, 165, 8, 255);
+    }
+
+    .section-three-services>.container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5vw;
+    }
+
+    .section-three-services>.container .text {
+        padding: 3vh 0;
+    }
+
+    .section-three-services>.container .text h1 {
+        color: rgba(233, 165, 8, 255);
+        font-family: "Gilroy-Black";
+        font-size: 4vw;
+    }
+
+    .section-three-services>.container .text p {
+        color: black;
+        font-family: "Gilroy-Regular";
+        font-size: 3vw;
+    }
+
+    .section-three-services>.container .text p span {
+        color: rgba(233, 165, 8, 255);
+        font-family: "Gilroy-Black";
+        font-size: 12vw;
+    }
+
+    .section-three-services>.container .image img {
+        width: 100vw;
+    }
+
+    /* Section Four */
+
+    .section-four-services {
+        height: 100%;
+        width: 100vw;
+        background-color: white;
+    }
+
+    .section-four-services>.heading {
+        width: 100vw;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .section-four-services>.heading h1 {
+        font-family: "Gilroy-Bold";
+        font-size: 7vw;
+        padding: 2vw;
+    }
+
+    .section-four-services>.heading span {
+        color: rgba(233, 165, 8, 255);
+    }
+
+    .section-four-services>.container {
+        background-color: rgba(233, 165, 8, 255);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw;
+    }
+
+
+    .section-four-services>.container .text {
+        text-align: center;
+        padding: 0;
+    }
+
+    .section-four-services>.container .text h1 {
+        font-family: "Gilroy-Black";
+        color: black;
+        font-size: 4vw;
+    }
+
+    .section-four-services>.container .text h2 {
+        font-family: "Gilroy-Black";
+        color: white;
+        font-size: 8vw;
+    }
+
+    .section-four-services>.container .text p {
+        font-family: "Gilroy-Regular";
+        color: black;
+        font-size: 3vw;
+        text-align: justify;
+        margin-top: 2vh;
+    }
+
+    .section-four-services>.container .image img {
+        width: 100vw;
+    }
+
+    /* Section Five */
+
+    .section-five-services {
+        height: 100%;
+        width: 100vw;
+        background-color: white;
+    }
+
+    .section-five-services>.heading {
+        width: 100vw;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .section-five-services>.heading h1 {
+        font-family: "Gilroy-Bold";
+        font-size: 7vw;
+        padding: 2vw;
+    }
+
+    .section-five-services>.heading span {
+        color: rgba(233, 165, 8, 255);
+    }
+
+    .section-five-services>.container {
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5vw;
+    }
+
+    .section-five-services>.container .text {
+        height: 100%;
+        padding: 3vh 0 0 0;
+        text-align: left;
+    }
+
+    .section-five-services>.container .text h1 {
+        font-family: "Gilroy-Bold";
+        color: black;
+        font-size: 4vw;
+    }
+
+    .section-five-services>.container .text p {
+        font-family: "Gilroy-Regular";
+        color: rgba(233, 165, 8, 255);
+        font-size: 2.8vw;
+    }
+
+    .section-five-services>.container .text p span {
+        font-family: "Gilroy-Bold";
+        font-size: 4vw;
+    }
+
+    .section-five-services>.container .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-five-services>.container .image img {
+        width: 100vw;
+    }
+
+    /* Section Six */
+
+    .section-six-services {
+        height: 100%;
+        width: 100vw;
+    }
+
+    .section-six-services>.heading {
+        width: 100vw;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .section-six-services>.heading h1 {
+        font-family: "Gilroy-Bold";
+        font-size: 6vw;
+        padding: 2vw;
+    }
+
+    .section-six-services>.heading span {
+        color: rgba(233, 165, 8, 255);
+    }
+
+    .section-six-services>.container {
+        height: 100%;
+        background-color: rgba(233, 165, 8, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5vw;
+    }
+
+    .section-six-services>.container .text {
+        text-align: left;
+        padding: 3vh 0 0 0;
+    }
+
+    .section-six-services>.container .text h1 {
+        font-family: "Gilroy-Bold";
+        color: white;
+        font-size: 4vw;
+    }
+
+    .section-six-services>.container .text p {
+        font-family: "Gilroy-Regular";
+        color: black;
+        font-size: 2.8vw;
+    }
+
+    .section-six-services>.container .text p span {
+        font-family: "Gilroy-Bold";
+        font-size: 4vw;
+    }
+
+    .section-six-services>.container .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-six-services>.container .image img {
+        width: 100vw;
+    }
 }

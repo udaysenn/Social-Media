@@ -1,144 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Typography Section</title>
+  <meta charset="UTF-8">
+  <title>Speech Bubble Design</title>
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      padding: 40px;
-      background-color: #fff;
-      color: #000;
-    }
-
-    .main-container {
+      background-color: #d99400; /* Orange background */
       display: flex;
-      align-items: flex-start; /* Align items to top */
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    .left {
-      flex: 1;
-      min-width: 300px;
-    }
-
-    .typography-box {
-      background-color: #e50019;
-      color: white;
-      padding: 30px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .typography-box h5 {
-      letter-spacing: 3px;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .typography-box h1 {
-      font-size: 32px;
-      font-weight: bold;
-      line-height: 1.2;
-    }
-
-    .description {
-      font-size: 14px;
-      line-height: 1.6;
-      max-width: 300px;
-    }
-
-    .right {
-      flex: 1;
-      min-width: 300px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .highlight-text {
-      font-size: 20px;
-      font-weight: 600;
-      color: #d6006d;
-    }
-
-    .color-box {
-      display: flex;
-      gap: 20px;
-      border: 2px solid #ffcc00;
-      padding: 20px;
-    }
-
-    .color {
-      flex: 1;
-      height: 180px;
+    .bubble {
       position: relative;
-      display: flex;
-      align-items: flex-end;
-      padding: 10px;
-      font-size: 10px;
+      background: #d99400;
+      border: 6px solid black;
+      border-radius: 50% / 40%;
+      padding: 60px 50px;
+      width: 600px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .bubble::before {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      left: 50px;
+      width: 60px;
+      height: 60px;
+      background: #d99400;
+      border: 6px solid black;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -90px;
+      left: 20px;
+      width: 30px;
+      height: 30px;
+      background: #d99400;
+      border: 6px solid black;
+      border-radius: 50%;
+      z-index: -2;
+    }
+
+    .dot {
+      position: absolute;
+      bottom: -110px;
+      left: 0px;
+      width: 15px;
+      height: 15px;
+      background: #000;
+      border-radius: 50%;
+    }
+
+    .bubble strong {
       font-weight: bold;
-      color: #000;
-    }
-
-    .color.yellow {
-      background-color: #fcb814;
-    }
-
-    .color.red {
-      background-color: #e50019;
-    }
-
-    .color span {
-      font-size: 10px;
     }
   </style>
 </head>
 <body>
 
-  <div class="main-container">
-    <!-- Right Section FIRST (appears left visually due to flex order) -->
-    <div class="right">
-      <div class="highlight-text">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing
-      </div>
-      <div class="color-box">
-        <div class="color yellow">
-          <span>
-            RGB 245 | 161 | 38<br/>
-            CMYK 0 | 10 | 100<br/>
-            PANTONE BLACK C
-          </span>
-        </div>
-        <div class="color red">
-          <span>
-            RGB 245 | 31 | 38<br/>
-            CMYK 0 | 100 | 100<br/>
-            PANTONE BLACK C
-          </span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Left Section -->
-    <div class="left">
-      <div class="typography-box">
-        <h5>TYPOGRAPHY</h5>
-        <h1>AGENOR<br/>FAMILY</h1>
-      </div>
-      <div class="description">
-        For Real Namkeen, we took two fonts — ____ and ____ — adds some fun in the brand – while the simple typeface is always appreciated, a little bit of fun is what adds the charm to the brand’s social media.
-      </div>
-    </div>
+  <div class="bubble">
+    Next up is the creation process. We create with copy and design. Copy and design, when blended in perfect amounts, bring magic. What sometimes lacks in design, copy can cover up. And vice versa. But finding that balance gets tricky sometimes. And that is why <strong>HCF Click’s social media marketing services</strong> ranks the list. We finetune copy and design in such a manner that provide magical end products! Don’t trust us? Check out our work in Apple Foods!
+    <div class="dot"></div>
   </div>
 
 </body>

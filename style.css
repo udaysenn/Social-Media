@@ -53,3 +53,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  display: none;
+}

@@ -3,11 +3,19 @@
 /* Section One */
 
 .section-one-work {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url(/assets/Work/Asset\ 2-100.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-one-work h1{
+    font-family: "Gilroy-Bold";
+    font-size: 5vw;
+    color: white;
 }
 
 /* Section Two */
@@ -286,4 +294,11 @@
     object-fit: cover;
     object-position: top;
 
+}
+
+
+/* Media Queries */
+
+@media screen {
+    
 }
