@@ -4,23 +4,265 @@
 .section-one-home {
     height: 100vh;
     max-width: 100%;
-    background-color: black;
+    /* background-color: black; */
+    background-color: #f4a300;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.section-one-home .container {
-    height: 95vh;
-    background-color: rgba(233, 165, 8, 255);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+
+.monitor {
+    background: url('/assets/Home/Desktop.png') no-repeat center/contain;
+    width: 900px;
+    height: 600px;
     position: relative;
+  }
+  .screen-content {
+    position: absolute;
+    top: 5%;
+    left: 13%;
+    width: 74%;
+    height: 58%;
+    background: transparent;
+    color: #f4a300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
+  }
+  .top-text {
+    font-size: 24px;
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
 
-.section-one-home .container img {
+  .click-text {
+    font-size: 72px;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    color: #f4a300;
+  }
+  .click-text span {
+    position: relative;
+  }
+
+  .letters {
+    display: flex;
+    /* gap: 10px; */
+  }
+
+  .letter {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .inner-sequence {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    animation-delay: 2s;
+  }
+
+
+  
+
+  .letter:nth-child(odd) .inner-sequence {
+    animation-name: scrollDown;
+  }
+
+  .letter:nth-child(even) .inner-sequence {
+    animation-name: scrollUp;
+  }
+
+  .char {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .char.yellow {
+    color: #f4a300;
+  }
+
+  .char.white {
+    color: white;
+  }
+
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(-336px); /* 7 lines * 48px */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scrollUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-336px); /* 7 lines * 48px */
+    }
+  }
+
+     /* Bar after each letter */
+.letter::after {
+    content: '|';
+    position: absolute;
+    top: 50%;
+    right: -1px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 48px;
+    line-height: 48px;
+    pointer-events: none;
+  }
+  /* Remove bar after last letter */
+  .letter:last-child::after {
+    content: '';
+  }
+
+
+   /* Only add bars between letters, not before first or after last */
+   /* .click-text span:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: -10px;
+    color: white;
+  } */
+
+  .bottom-strip {
+    position: absolute;
+    bottom: 32%;
+    width: 100%;
+    font-size: 14px;
+    color: #f4a300;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+
+     /* ✅ Add these lines */
+  border-top: 2px solid #f4a300;
+  border-bottom: 2px solid #f4a300;
+  padding: 5px 0;
+  }
+
+  .bottom-strip span {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+  }
+
+  .plane-icon {
+    height: 14px;  /* Match the text height */
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+ 
+/* Plane animation */
+/* .plane-fly {
+    position: absolute;
+    left: -100px;
+    top: -30px;
+    animation: flyPlane 6s ease-in-out infinite alternate;
+    z-index: 2;
+  } */
+
+  .plane-path {
+    position: absolute;
+    top: 17%;   /* matches .screen-content top */
+    left: 13%;  /* matches .screen-content left */
+    width: 74%;
+    height: 58%;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  .plane-path img.plane {
+    position: absolute;
+    height: 30px;
+    width: auto;
+    animation: orbitAroundClick 8s ease-in-out infinite;
+  }
+/* 
+  .plane-fly img.plane {
+    height: 30px;
+    width: auto;
+  } */
+
+  /* @keyframes flyPlane {
+    0% {
+      transform: translate(0, 0) rotate(-10deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    50% {
+      transform: translate(450px, -150px) rotate(-5deg);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(900px, -300px) rotate(0deg);
+      opacity: 0;
+    }
+  } */
+
+  @keyframes orbitAroundClick {
+    0% {
+      top: 0;
+      left: 100%;
+      transform: translate(-100%, 0) rotate(-90deg); /* top-right */
+    }
+    25% {
+      top: 0;
+      left: 0;
+      transform: translate(0, 0) rotate(-180deg); /* top-left */
+    }
+    50% {
+      top: 100%;
+      left: 0;
+      transform: translate(0, -100%) rotate(-270deg); /* bottom-left */
+    }
+    75% {
+      top: 100%;
+      left: 100%;
+      transform: translate(-100%, -100%) rotate(0deg); /* bottom-right */
+    }
+    100% {
+      top: 0;
+      left: 100%;
+      transform: translate(-100%, 0) rotate(-90deg); /* back to top-right */
+    }
+  }
+  
+
+/* .section-one-home .container img {
     max-width: 100%;
     max-height: 100%;
-}
+} */
 
 
 
@@ -330,3 +572,4 @@ textarea::placeholder {
     color: rgba(233, 165, 8, 255);
     font-size: 200px;
 }
+
