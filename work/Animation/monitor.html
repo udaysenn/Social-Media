@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Design Inside Monitor</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .monitor {
+      background: url('Desktop.png') no-repeat center/contain;
+      width: 900px;
+      height: 600px;
+      position: relative;
+    }
+
+    .screen-content {
+      position: absolute;
+      top: 17%;
+      left: 13%;
+      width: 74%;
+      height: 58%;
+      background: transparent;
+      color: #f4a300;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .top-text {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .click-text {
+      font-size: 72px;
+      font-weight: bold;
+      display: flex;
+      gap: 10px;
+      color: #f4a300;
+    }
+
+    .click-text span {
+      position: relative;
+    }
+
+    .bar::before {
+      content: '|';
+      position: absolute;
+      left: -10px;
+      color: white;
+    }
+
+    .bar.last::after {
+      content: '|';
+      position: absolute;
+      right: -10px;
+      color: white;
+    }
+
+    .bottom-strip {
+      position: absolute;
+      bottom: 32%;
+      width: 100%;
+      font-size: 14px;
+      color: #f4a300;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .bottom-strip span {
+      display: inline-block;
+      animation: scroll 10s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="monitor">
+    <div class="screen-content">
+      <div class="top-text">IT ALL STARTS WITH A</div>
+      <div class="click-text">
+        <span class="bar">C</span>
+        <span class="bar">L</span>
+        <span class="bar">I</span>
+        <span class="bar">C</span>
+        <span class="bar last">K</span>
+      </div>
+    </div>
+    <div class="bottom-strip">
+      <span>✈ IT ALL STARTS WITH A ✈ IT ALL STARTS WITH A ✈ IT ALL STARTS WITH A ✈ IT ALL STARTS WITH A ✈ IT ALL STARTS WITH A ✈</span>
+    </div>
+  </div>
+</body>
+</html>

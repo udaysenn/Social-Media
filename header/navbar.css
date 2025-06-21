@@ -23,6 +23,7 @@ nav .container{
 
 .navlinks {
     display: flex;
+    gap: 2.5rem;
 }
 
 .navlinks a {
@@ -55,9 +56,58 @@ nav .container{
 
 nav .social-links{
     display: flex;
+    gap: 1rem;
 }
 nav .social-links a {
     font-size: 20px;
-    margin-right: 20%;
+    /* margin-right: 20%; */
     color: white;
 }
+
+
+
+/* Hides navlinks and shows hamburger on small screens */
+@media (max-width: 1024px) {
+    .navlinks,
+    .social-links {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+  
+    .hamburger .line {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+  }
+  
+  /* Show mobile nav menu on click (toggle via JS) */
+  @media (max-width: 1024px) {
+    .navlinks.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 10vh;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      text-align: center;
+      padding: 2rem 0;
+      gap: 1.5rem;
+      z-index: 99;
+    }
+  
+    .social-links.active {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+  

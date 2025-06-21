@@ -15,6 +15,31 @@
     font-size: 100px;
     padding: 200px;
 }
+@media (max-width: 1024px) {
+  .section-one-about h1 {
+    height: 80vh;
+      font-size: 80px;
+      padding: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-one-about h1 {
+    height: 60vh;
+      font-size: 60px;
+      padding: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-one-about h1 {
+    height: 40vh;
+      font-size: 40px;
+      padding: 60px 20px;
+  }
+}
+
+
 /* Section Two */
 .section-two-about{
     height: 30vh;
@@ -39,6 +64,51 @@
 
 }
 
+
+@media (max-width: 1024px) {
+  .section-two-about {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .section-two-about div h1 {
+    font-size: 90px;
+  }
+
+  .section-two-about div p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-two-about {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  .section-two-about div h1 {
+    font-size: 70px;
+  }
+
+  .section-two-about div p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-two-about div h1 {
+    font-size: 50px;
+  }
+
+  .section-two-about div p {
+    font-size: 18px;
+  }
+}
+
+
 /* Section Three */
 
 .section-three-about{
@@ -57,4 +127,41 @@
     padding: 0 25vw 0 25vw;
     text-align: justify;
     font-family: Gilroy-Regular;
+}
+
+
+@media (max-width: 1024px) {
+  .section-three-about {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .section-three-about p {
+    font-size: 20px;
+    padding: 0 15vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-three-about {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .section-three-about p {
+    font-size: 18px;
+    padding: 0 10vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-three-about {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .section-three-about p {
+    font-size: 16px;
+    padding: 0 6vw;
+  }
 }

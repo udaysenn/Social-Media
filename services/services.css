@@ -14,6 +14,31 @@
     line-height: 0.9;
 }
 
+
+/* Responsive Section One*/
+
+/* Medium Screens */
+@media (max-width: 768px) {
+    .section-one-services h1 {
+        font-size: 48px;
+    }
+
+    .section-one-services img {
+        width: 70%;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+    .section-one-services h1 {
+        font-size: 36px;
+    }
+
+    .section-one-services img {
+        width: 80%;
+    }
+}
+
 /* Section Two */
 .section-two-services {
     height: 100%;
@@ -58,6 +83,47 @@
     color: black;
     font-family: "Gilroy-Regular";
     font-size: 1.5vw;
+}
+
+
+/* Responsive Section Two*/
+
+@media (max-width: 768px) {
+    .section-two-services .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-two-services .text {
+        padding: 0;
+    }
+
+    .section-two-services h1 {
+        font-size: 26px;
+    }
+
+    .section-two-services h2 {
+        font-size: 32px;
+    }
+
+    .section-two-services p {
+        font-size: 18px;
+    }
+}
+
+/* Small Devices (Mobiles) */
+@media (max-width: 480px) {
+    .section-two-services h1 {
+        font-size: 22px;
+    }
+
+    .section-two-services h2 {
+        font-size: 26px;
+    }
+
+    .section-two-services p {
+        font-size: 16px;
+    }
 }
 
 /* Section Three */
@@ -124,6 +190,57 @@
 
 .section-three-services>.container .image img {
     width: 50vw;
+}
+
+/* Responsive Section Three*/
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+    .section-three-services .heading h1 {
+        font-size: 48px;
+    }
+    
+    .section-three-services .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 5%;
+    }
+    
+    .section-three-services .container .text {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .section-three-services .container .text h1 {
+        font-size: 28px;
+    }
+    
+    .section-three-services .container .text p {
+        font-size: 18px;
+    }
+    
+    .section-three-services .container .text p span {
+        font-size: 60px;
+    }
+}
+
+/* Small Devices (Mobiles) */
+@media (max-width: 480px) {
+    .section-three-services .heading h1 {
+        font-size: 36px;
+    }
+    
+    .section-three-services .container .text h1 {
+        font-size: 24px;
+    }
+    
+    .section-three-services .container .text p {
+        font-size: 16px;
+    }
+    
+    .section-three-services .container .text p span {
+        font-size: 48px;
+    }
 }
 
 
@@ -196,6 +313,9 @@
 .section-four-services>.container .image img {
     width: 50vw;
 }
+
+/* Responsive Section Four*/
+
 
 /* Section Five */
 
