@@ -54,16 +54,95 @@
     text-align: center;
 }
 
-.section-two-about div h1{
+/* .section-two-about div h1{
     font-family: Gilroy-Regular;
     font-size: 130px;
-}
+} */
 .section-two-about div p{
     font-size: 36px;
     font-family: Gilroy-Black;
 
 }
+.char {
+  font-family: Gilroy-Regular;
+  height: 130px;
+  line-height: 130px;
+  font-size: 130px;
+  text-align: center;
+  color: black;
+}
 
+/* Digit animation */
+.digit-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* .digit {
+  width: 80px;
+  height: 130px;
+  overflow: hidden;
+  position: relative;
+  font-family: Gilroy-Regular;
+} */
+.digit {
+  width: 80px;
+  height: 130px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  margin: 0 2px;
+  font-family: Gilroy-Regular;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #eee;
+}
+
+/* .inner-sequence {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: scrollDown 2s ease-in-out forwards;
+} */
+
+.inner-sequence {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite; /* run only once */
+}
+
+.digit:nth-child(odd) .inner-sequence {
+  animation-name: scrollDown;
+}
+
+.digit:nth-child(even) .inner-sequence {
+  animation-name: scrollUp;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-1170px); /* 9 * 130px */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1170px); /* 9 * 130px */
+  }
+}
 
 @media (max-width: 1024px) {
   .section-two-about {
