@@ -192,8 +192,6 @@
     width: 50vw;
 }
 
-/* Responsive Section Three*/
-
 /* Medium Devices (Tablets) */
 @media (max-width: 768px) {
     .section-three-services .heading h1 {
@@ -313,8 +311,6 @@
 .section-four-services>.container .image img {
     width: 50vw;
 }
-
-/* Responsive Section Four*/
 
 
 /* Section Five */

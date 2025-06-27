@@ -208,6 +208,121 @@
     }
 }
 
+/* Section Four */
+.section-four-work2 {
+    height: 100%;
+    width: 100vw;
+    /* background: linear-gradient(
+    to bottom,
+    white 0%,
+    white 40%,
+    gray 40%,
+    gray 60%,
+    white 60%,
+    white 100%
+  ); */
+}
+
+.section-four-work2>.container {
+    padding: 0vh 20vw;
+    height: 100%;
+    width: 100vw;
+}
+
+.section-four-work2>.container .typography {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-four-work2>.container .typography .box1 {
+    height: 50%;
+    width: 50%;
+    background-color: #ED7D00;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-four-work2>.container .typography .box1 h1 {
+    font-family: "Gilroy-Light";
+    font-size: 1.5vw;
+    letter-spacing: .2vw;
+}
+
+.section-four-work2>.container .typography .box1 p {
+    font-family: "Gilroy-Bold";
+    font-size: 4vw;
+    line-height: 1;
+    letter-spacing: .2vw;
+}
+
+.section-four-work2>.container .typography .para1 {
+    height: 30%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-four-work2>.container .typography .para1 p {
+    font-size: 2.2vw;
+    font-family: "Gilroy-Bold";
+    color: #E6007F;
+}
+
+.section-four-work2>.container .typography .para2 {
+    height: 40%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.section-four-work2>.container .typography .para2 p {
+    font-family: "Gilroy-Medium";
+    color: black;
+    font-size: 1.3vw;
+}
+
+.section-four-work2>.container .typography .box2 {
+    height: 60%;
+    width: 60%;
+    border: 2px solid black;
+    background-color: white;
+    position: relative;
+    bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.section-four-work2>.container .typography .box2 .first{
+    height: 80%;
+    width: 50%;
+    background-color: #575757;
+}
+
+.section-four-work2>.container .typography .box2 .second{
+    height: 80%;
+    width: 50%;
+    background-color: #ED7D00;
+}
+
+
+.section-four-work2> .container .mobile{
+    height: 100vh;
+    width: 100%;
+    display: wrap;
+}
+
+.section-four-work2> .container .mobile .mobile-img img{
+    height: 100%;
+    width: 100%;
+}
+
 /* Section Five */
 .section-five-work2 {
     height: 100%;

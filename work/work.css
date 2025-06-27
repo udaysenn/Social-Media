@@ -5,27 +5,30 @@
 .section-one-work {
     width: 100vw;
     height: 100vh;
-    background-image: url(/assets/Work/Asset\ 2-100.jpg);
+    background-image: url(/assets//Work/Asset\ 2-100.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.section-one-work h1{
+
+.section-one-work>h1 {
     font-family: "Gilroy-Bold";
     font-size: 5vw;
-    color: white;
+    color: black;
 }
 
 /* Section Two */
 
 .section-two-work {
-    width: 100%;
-    height: 100vh;
-    background-image: url(/assets/Work/Asset\ 4-100.jpg);
-    background-position: center;
-    background-size: cover;
+    width: 100vw;
+    height: 100%;
+}
+
+.section-two-work>img {
+    width: 100vw;
 }
 
 /* Section Three */
@@ -178,10 +181,10 @@
 /* Section Five */
 
 .section-five-work {
-    width: 100%;
-    height: 30vh;
+    width: 100vw;
+    height: 100%;
     background-color: red;
-    font-family: "Gilroy-Bold";
+    font-family: "Gilroy-Black";
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -190,40 +193,43 @@
 
 .section-five-work div {
     text-align: center;
+    padding: 2vh 2vw;
 }
 
 .section-five-work div h1 {
-    font-size: 110px;
+    font-size: 10vw;
+    line-height: 1;
 }
 
 .section-five-work div p {
-    font-size: 34px;
+    font-size: 2vw;
 }
 
 /* Section Six */
 .section-six-work {
-    width: 100%;
-    height: 315vh;
-    background-color: white;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
 }
 
-.section-six-work .container {
-    width: 100%;
-    height: 120vh;
+.section-six-work > .background-img {
+    width: 100vw;
+    height: 100vh;
     background-image: url(/assets/Work/Copy\ of\ 331A8931.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
 }
 
-.section-six-work .content {
-    width: 70%;
-    position: relative;
-    top: 25%;
-    left: 15%;
+ 
+.section-six-work> .content {
+    height: 100%;
+    width: 70vw;
+    top: 55vh;
+    left: 15vw;
     background-color: white;
     padding: 3%;
-
 }
 
 .section-six-work .content .row-1 {
@@ -263,42 +269,127 @@
 /* Section Seven */
 
 .section-seven-work {
-    height: 70vh;
-    width: 100%;
+    height: 80%;
+    width: 100vw;
     display: flex;
+    flex-wrap: wrap;
+
 }
 
-.section-seven-work .one,
-.section-seven-work .three {
+.section-seven-work>.one {
     display: flex;
     flex-direction: column;
 }
 
-.section-seven-work .one img,
-.section-seven-work .three img {
-    max-width: 100%;
-    max-height: 50%;
+.section-seven-work>.one img {
+    width: 20vw;
+    height: 40%;
 }
 
-.section-seven-work .two img,
-.section-seven-work .four img {
-    max-height: 100%;
+.section-seven-work>.two img {
+    width: 30vw;
+    height: 80%
 }
 
-.section-seven-work .four {
-    flex: 1;
+.section-seven-work>.three {
+    display: flex;
+    flex-direction: column;
 }
 
-.section-seven-work .four img {
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-
+.section-seven-work>.three img {
+    width: 20vw;
+    height: 40%;
 }
 
+.section-seven-work>.four img {
+    width: 30vw;
+    height: 80%;
+}
 
 /* Media Queries */
 
-@media screen {
-    
+@media (max-width: 620px) {
+    /* Section One */
+
+    /* .section-one-work {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .section-one-work>img {
+        height: 100vh;
+        width: 80vw;
+    } */
+
+    /* Section Five */
+
+    .section-five-work {
+        width: 100vw;
+        height: 100%;
+        background-color: red;
+        font-family: "Gilroy-Black";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .section-five-work div {
+        text-align: center;
+        padding: 2vh 0;
+    }
+
+    .section-five-work div h1 {
+        font-size: 20vw;
+        line-height: 1;
+    }
+
+    .section-five-work div p {
+        font-size: 4vw;
+    }
+
+    /* Section Seven */
+
+    .section-seven-work {
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-seven-work>.one img {
+        width: 50vw;
+        height: 100%;
+    }
+
+    .section-seven-work>.two img {
+        width: 50vw;
+        height: 50%;
+        display: none;
+    }
+
+    .section-seven-work>.three img {
+        width: 50vw;
+        height: 100%;
+    }
+
+    .section-seven-work>.four {
+        display: none;
+    }
+
+    .section-seven-work>.four img {
+        width: 50vw;
+        height: 50%;
+    }
+
+
 }
+
+
+
+
+
+
+
+

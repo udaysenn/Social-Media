@@ -1,78 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Speech Bubble Design</title>
+  <title>Snack Layout</title>
   <style>
-    body {
-      margin: 0;
+    *{
       padding: 0;
-      background-color: #d99400; /* Orange background */
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      margin: 0;
+    }
+    section{
+      width: 50%;
       height: 100vh;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: red;
+      display: flex;
+      flex-wrap: wrap;
     }
-
-    .bubble {
+    .first{
+      height: 50%;
+      width: 50%;
+      background-color: orange;
+    }
+    p{
+      width: 50%;
+    }
+    .second{
+      height: 60%;
+      width: 60%;
+      background-color: gray;
       position: relative;
-      background: #d99400;
-      border: 6px solid black;
-      border-radius: 50% / 40%;
-      padding: 60px 50px;
-      width: 600px;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .bubble::before {
-      content: "";
-      position: absolute;
-      bottom: -60px;
-      left: 50px;
-      width: 60px;
-      height: 60px;
-      background: #d99400;
-      border: 6px solid black;
-      border-radius: 50%;
-      z-index: -1;
-    }
-
-    .bubble::after {
-      content: "";
-      position: absolute;
-      bottom: -90px;
-      left: 20px;
-      width: 30px;
-      height: 30px;
-      background: #d99400;
-      border: 6px solid black;
-      border-radius: 50%;
-      z-index: -2;
-    }
-
-    .dot {
-      position: absolute;
-      bottom: -110px;
-      left: 0px;
-      width: 15px;
-      height: 15px;
-      background: #000;
-      border-radius: 50%;
-    }
-
-    .bubble strong {
-      font-weight: bold;
+      bottom:10%;
+      left: 40%;
     }
   </style>
 </head>
 <body>
-
-  <div class="bubble">
-    Next up is the creation process. We create with copy and design. Copy and design, when blended in perfect amounts, bring magic. What sometimes lacks in design, copy can cover up. And vice versa. But finding that balance gets tricky sometimes. And that is why <strong>HCF Click’s social media marketing services</strong> ranks the list. We finetune copy and design in such a manner that provide magical end products! Don’t trust us? Check out our work in Apple Foods!
-    <div class="dot"></div>
-  </div>
-
+  <section>
+    <div class="first"></div>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem ipsum dolor.</p>
+    <div class="second"></div>
+  </section>
 </body>
 </html>
