@@ -1,0 +1,303 @@
+@import url(/style.css);
+
+/* Section One */
+
+.section-one-work2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/Work2/two-children.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-one-work2>.container {
+    padding: 20vh 0 0 25vw;
+}
+
+.section-one-work2>.container h1 {
+    font-family: "Gilroy-Black";
+    font-size: 4vw;
+    color: #2D2D2B;
+}
+
+.section-one-work2>.container p {
+    font-family: "Gilroy-Regular";
+    color: white;
+    font-size: 1.5vw;
+
+}
+
+@media (max-width:1024px) {
+    .section-one-work2>.container {
+        padding: 20vh 0 0 20vw;
+    }
+
+    .section-one-work2>.container h1 {
+        font-family: "Gilroy-Black";
+        font-size: 5.5vw;
+        color: #2D2D2B;
+    }
+
+    .section-one-work2>.container p {
+        font-family: "Gilroy-Regular";
+        color: white;
+        font-size: 2vw;
+
+    }
+}
+
+@media (max-width:768px) {
+    .section-one-work2>.container {
+        padding: 20vh 0 0 15vw;
+    }
+
+    .section-one-work2>.container h1 {
+        font-family: "Gilroy-Black";
+        font-size: 6.5vw;
+        color: #2D2D2B;
+    }
+
+    .section-one-work2>.container p {
+        font-family: "Gilroy-Regular";
+        color: white;
+        font-size: 2.5vw;
+
+    }
+}
+
+@media (max-width:480px) {
+    .section-one-work2 {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/assets/Work2/two-children.jpg);
+        background-position: 60%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .section-one-work2>.container {
+        padding: 15vh 0 0 15vw;
+    }
+
+    .section-one-work2>.container h1 {
+        font-family: "Gilroy-Black";
+        font-size: 10vw;
+        color: #2D2D2B;
+    }
+
+    .section-one-work2>.container p {
+        font-family: "Gilroy-Regular";
+        color: white;
+        font-size: 4vw;
+
+    }
+}
+
+/* Section Two */
+
+.section-two-work2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/Work2/heart.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.section-two-work2>.container p {
+    font-family: "Gilroy-Regular";
+    font-size: 1.3vw;
+    position: relative;
+    top: 26vh;
+}
+
+.section-two-work2>.container p span {
+    font-family: "Gilroy-Bold";
+    font-size: 2.4vw;
+}
+
+@media (max-width:1024px) {
+    .section-two-work2>.container p {
+        font-family: "Gilroy-Regular";
+        font-size: 1.6vw;
+        position: relative;
+        top: 30vh;
+    }
+
+    .section-two-work2>.container p span {
+        font-family: "Gilroy-Bold";
+        font-size: 2.8vw;
+    }
+}
+
+@media (max-width:768px) {
+    .section-two-work2>.container p {
+        font-family: "Gilroy-Regular";
+        font-size: 2vw;
+        position: relative;
+        top: 30vh;
+    }
+
+    .section-two-work2>.container p span {
+        font-family: "Gilroy-Bold";
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width:480px) {
+    .section-two-work2>.container p {
+        font-family: "Gilroy-Regular";
+        font-size: 2.8vw;
+        position: relative;
+        top: 30vh;
+    }
+
+    .section-two-work2>.container p span {
+        font-family: "Gilroy-Bold";
+        font-size: 5vw;
+    }
+}
+
+/* Section Three */
+.section-three-work2 {
+    width: 100vw;
+    height: 100%;
+}
+
+.section-three-work2>img {
+    height: 100%;
+    width: 100vw;
+    display: block;
+}
+
+.section-three-work2>p {
+    text-align: center;
+    font-family: "Gilroy-Bold";
+    font-size: 2vw;
+    padding: 10vh 15vw 0 15vw;
+}
+
+@media (max-width: 1024px) {
+    .section-three-work2>p {
+        text-align: center;
+        font-family: "Gilroy-Bold";
+        font-size: 2.5vw;
+        padding: 10vh 15vw 0 15vw;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .section-three-work2>p {
+        text-align: center;
+        font-family: "Gilroy-Bold";
+        font-size: 2.5vw;
+        padding: 10vh 15vw 0 15vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-three-work2>p {
+        text-align: center;
+        font-family: "Gilroy-Bold";
+        font-size: 3vw;
+        padding: 5vh 15vw 0 15vw;
+    }
+}
+
+/* Section Five */
+.section-five-work2 {
+    height: 100%;
+    width: 100vw;
+    background-color: #ED7D00;
+    color: white;
+    font-family: "Gilroy-Black";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5vh 15vw;
+}
+
+.section-five-work2>div h1 {
+    font-size: 10vw;
+}
+
+.section-five-work2>div p {
+    font-family: "Gilroy-Bold";
+    font-size: 2vw;
+}
+
+@media (max-width: 480px) {
+    .section-five-work2 {
+        flex-direction: column;
+        padding: 5vh 0vw;
+
+    }
+
+    .section-five-work2>div h1 {
+        font-size: 20vw;
+    }
+
+    .section-five-work2>div p {
+        font-size: 4vw;
+    }
+}
+
+/* Section Six */
+.section-six-work2 {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-six-work2>.double-img {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-six-work2>.double-img img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.section-six-work2>.single-img {
+    width: 20%;
+}
+
+.section-six-work2>.single-img img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.section-six-work2>.single-img-big {
+    width: 40%;
+}
+
+.section-six-work2>.single-img-big img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width:480px) {
+
+    .section-six-work2>.double-img {
+        width: 50vw;
+    }
+
+    .section-six-work2>.single-img {
+        width: 50vw;
+    }
+
+    .section-six-work2>.single-img-big {
+        width: 50vw;
+    }
+}
