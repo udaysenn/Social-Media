@@ -1,52 +1,46 @@
-// const cards = document.querySelectorAll('.card');
+const phones = [...document.querySelectorAll('.phone')];
+let centerIndex = 2;
+let phoneOrder = [0, 1, 2, 3, 4]; // indexes of phones logically
 
-// cards.forEach(card => {
-//   card.addEventListener('click', () => {
-//     document.querySelector('.card.active')?.classList.remove('active');
-//     card.classList.add('active');
-//     card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-//   });
-// });
+function updateClasses() {
+  phoneOrder.forEach((originalIndex, visualIndex) => {
+    const phone = phones[originalIndex];
 
+    phone.classList.remove('far-left', 'left', 'center', 'right', 'far-right', 'inactive');
 
+    const diff = visualIndex - centerIndex;
 
+    if (diff === -2) {
+      phone.classList.add('far-left');
+    } else if (diff === -1) {
+      phone.classList.add('left');
+    } else if (diff === 0) {
+      phone.classList.add('center');
+    } else if (diff === 1) {
+      phone.classList.add('right');
+    } else if (diff === 2) {
+      phone.classList.add('far-right');
+    } else {
+      phone.classList.add('inactive');
+    }
+  });
+}
 
-// const phones = document.querySelectorAll(".phone");
-// const slides = document.querySelectorAll(".content-slide");
+phones.forEach((phone, originalIndex) => {
+  phone.addEventListener('click', () => {
+    const clickedVisualIndex = phoneOrder.indexOf(originalIndex);
+    if (clickedVisualIndex === centerIndex) return;
 
-// phones.forEach((phone) => {
-//   phone.addEventListener("click", () => {
-//     document.querySelector(".phone.center")?.classList.remove("center");
-//     phone.classList.add("center");
+    // Swap positions in the logical order array
+    const temp = phoneOrder[centerIndex];
+    phoneOrder[centerIndex] = phoneOrder[clickedVisualIndex];
+    phoneOrder[clickedVisualIndex] = temp;
 
-//     const index = phone.getAttribute("data-index");
-//     document.querySelector(".content-slide.active")?.classList.remove("active");
-//     document.querySelector(`.content-slide[data-index='${index}']`)?.classList.add("active");
-//   });
-// });
+    updateClasses();
+  });
+});
 
+// Initial setup
+updateClasses();
 
-const phones = document.querySelectorAll(".phone");
-
-    phones.forEach((phone) => {
-      phone.addEventListener("click", () => {
-        const centerPhone = document.querySelector(".phone.center");
-        if (phone === centerPhone) return;
-
-        // Swap content and background
-        const tempContent = phone.querySelector(".content-slide").outerHTML;
-        const tempBG = phone.style.backgroundImage;
-
-        const centerContent = centerPhone.querySelector(".content-slide").outerHTML;
-        const centerBG = centerPhone.style.backgroundImage;
-
-        phone.innerHTML = centerContent;
-        phone.style.backgroundImage = centerBG;
-
-        centerPhone.innerHTML = tempContent;
-        centerPhone.style.backgroundImage = tempBG;
-
-        centerPhone.classList.remove("center");
-        phone.classList.add("center");
-      });
-    });
+  
