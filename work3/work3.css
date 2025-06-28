@@ -1,0 +1,203 @@
+@import url(/style.css);
+
+/* Section One */
+.section-one-work3>img{
+    height: 100%;
+    width: 100vw;
+    display: block;
+}
+
+@media (max-width:480px){
+    .section-one-work3 {
+        height: 150vw;
+        width: 100vw;
+        background-image: url(/assets/Work3/Product\ banner-02.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-one-work3> img{
+        display: none;
+    }
+}
+
+/* Section Two */
+.section-two-work3>img {
+    height: 100%;
+    width: 100vw;
+    display: block;
+}
+
+@media (max-width:480px){
+    .section-two-work3 {
+        height: 150vw;
+        width: 100vw;
+        background-image: url(/assets/Work3/Asset\ 1-100.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-two-work3> img{
+        display: none;
+    }
+}
+
+
+/* Section Four */
+
+.section-four-work3{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    padding: 0 15vw;
+}
+
+.section-four-work3>.content,
+.section-four-work3>.phone-img{
+    flex: 1;
+}
+
+.section-four-work3>.content {
+    height: 100%;
+    width: 100%;
+}
+
+.section-four-work3>.content .para-1{
+    background-color: red;
+}
+
+.section-four-work3>.content .para-2{
+    background-color: green;
+}
+
+.section-four-work3> .phone-img img{
+    width: 100%;
+    display: block;
+}
+
+/* Section Five */
+.section-five-work3{
+    height: 100%;
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+    padding: 0 5vw 5vw 5vw;
+}
+
+.section-five-work3>.reel{
+    height: 600px;
+    width: 300px;
+    background-color: grey;
+}
+
+@media (max-width: 1024px){
+    .section-five-work3>.reel{
+        height: 500px;
+        width: 250px;
+    }
+}
+@media (max-width: 768px){
+    .section-five-work3>.reel{
+        height: 400px;
+        width: 200px;
+    }
+}
+
+
+/* Section Six */
+.section-six-work3 {
+    height: 100%;
+    width: 100vw;
+    background-color: #ED7D00;
+    color: white;
+    font-family: "Gilroy-Black";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5vh 15vw;
+}
+
+.section-six-work3>div h1 {
+    font-size: 10vw;
+}
+
+.section-six-work3>div p {
+    font-family: "Gilroy-Bold";
+    font-size: 2vw;
+}
+
+@media (max-width: 480px) {
+    .section-six-work3 {
+        flex-direction: column;
+        padding: 10vw 0vw;
+
+    }
+
+    .section-six-work3>div h1 {
+        font-size: 30vw;
+    }
+
+    .section-six-work3>div p {
+        font-size: 5vw;
+    }
+}
+
+
+/* Section Eight */
+.section-eight-work3 {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-eight-work3>.double-img {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-eight-work3>.double-img img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.section-eight-work3>.single-img {
+    width: 20%;
+}
+
+.section-eight-work3>.single-img img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.section-eight-work3>.single-img-big {
+    width: 40%;
+}
+
+.section-eight-work3>.single-img-big img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width:480px) {
+
+    .section-eight-work3>.double-img {
+        width: 50vw;
+    }
+
+    .section-eight-work3>.single-img {
+        width: 50vw;
+    }
+
+    .section-eight-work3>.single-img-big {
+        width: 50vw;
+    }
+}
