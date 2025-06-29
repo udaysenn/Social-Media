@@ -307,7 +307,7 @@
 
 /* Section Three */
 
-.section-three-home {
+/* .section-three-home {
     height: 130vh;
     width: 100%;
     background-color: rgba(233, 165, 8, 255);
@@ -342,7 +342,130 @@
 .section-three-home .container .content img {
     max-width: 60%;
     /* height: 80%; */
+/*} */
+
+
+.section-three-home {
+  height: 130vh;
+  width: 100%;
+  background-color: rgba(233, 165, 8, 255);
+  padding: 0 5vw;
+  box-sizing: border-box;
 }
+
+.section-three-home .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-three-home .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section-three-home .content h1 {
+  font-size: 64px;
+  font-family: "Gilroy-Black";
+  color: white;
+}
+
+.section-three-home .content h2 {
+  font-size: 150px;
+  font-family: "Gilroy-Black";
+  color: black;
+}
+
+.section-three-home .content img {
+  max-width: 60%;
+}
+
+/* SLIDER STYLING */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+  gap: 20px;
+}
+
+.phone {
+  position: absolute;
+  width: 220px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  transform-origin: center;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.phone.center {
+  transform: scale(1.1) translateX(0) rotateY(0);
+  z-index: 3;
+  opacity: 1;
+}
+
+.phone.left {
+  transform: scale(0.9) translateX(-240px);
+}
+
+.phone.right {
+  transform: scale(0.9) translateX(240px);
+}
+
+.phone.far-left {
+  transform: scale(0.8) translateX(-440px);
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.phone.far-right {
+  transform: scale(0.8) translateX(440px);
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.phone.hidden {
+  display: none;
+}
+
+.content-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 40px;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.icon-top {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
 
 /* Section Four */
 
