@@ -1,0 +1,140 @@
+@import url(/style.css);
+
+/* Section One */
+.section-one-work4>img{
+    height: 100%;
+    width: 100vw;
+    display: block;
+}
+
+@media (max-width:480px){
+    .section-one-work4 {
+        height: 150vw;
+        width: 100vw;
+        background-image: url(/assets/Work4/Asset\ 1-100.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-one-work4> img{
+        display: none;
+    }
+}
+
+/* Section Two */
+.section-two-work4>img {
+    height: 100%;
+    width: 100vw;
+    display: block;
+}
+
+@media (max-width:480px){
+    .section-two-work4 {
+        height: 150vw;
+        width: 100vw;
+        background-image: url(/assets/Work4/Asset\ 2-100.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-two-work4> img{
+        display: none;
+    }
+}
+
+
+
+/* Section Six */
+.section-six-work4 {
+    height: 100%;
+    width: 100vw;
+    background-color: #26348C;
+    color: white;
+    font-family: "Gilroy-Black";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5vh 15vw;
+}
+
+.section-six-work4>div h1 {
+    font-size: 10vw;
+}
+
+.section-six-work4>div p {
+    font-family: "Gilroy-Bold";
+    font-size: 2vw;
+}
+
+@media (max-width: 480px) {
+    .section-six-work4 {
+        flex-direction: column;
+        padding: 10vw 0vw;
+
+    }
+
+    .section-six-work4>div h1 {
+        font-size: 30vw;
+    }
+
+    .section-six-work4>div p {
+        font-size: 5vw;
+    }
+}
+
+
+/* Section Seven */
+.section-seven-work4 {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-seven-work4>.double-img {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-seven-work4>.double-img img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.section-seven-work4>.single-img {
+    width: 20%;
+}
+
+.section-seven-work4>.single-img img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.section-seven-work4>.single-img-big {
+    width: 40%;
+}
+
+.section-seven-work4>.single-img-big img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width:480px) {
+
+    .section-seven-work4>.double-img {
+        width: 50vw;
+    }
+
+    .section-seven-work4>.single-img {
+        width: 50vw;
+    }
+
+    .section-seven-work4>.single-img-big {
+        width: 50vw;
+    }
+}
