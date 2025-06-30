@@ -18,6 +18,7 @@
     height: 600px;
     position: relative;
   }
+
   .screen-content {
     position: absolute;
     top: 5%;
@@ -34,16 +35,15 @@
 
   }
   .top-text {
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin-bottom: 0px;
-    font-weight: bold;
+    font-family: "Gilroy-Medium";
   }
 
   .click-text {
+    font-family: "Gilroy-Black";
     font-size: 3vw;
-    font-weight: bold;
     display: flex;
-    gap: 10px;
     color: #f4a300;
   }
   .click-text span {
@@ -57,12 +57,12 @@
 
   .letter {
     width: 6vw;
-    height: 13vh;
+    height: 7vw;
     display: inline-block;
     position: relative;
     overflow: hidden;
-    font-size: 8vw;
-    font-weight: bold;
+    font-size: 10vw;
+    border-right: 0.3vw solid white;
   }
 
   .inner-sequence {
@@ -90,8 +90,8 @@
 
   .char {
     display: block;
-    height: 12vh;
-    line-height: 10vh;
+    height: 16vh;
+    line-height: 15vh;
     text-align: center;
   }
 
@@ -121,23 +121,6 @@
     }
   }
 
-     /* Bar after each letter */
-.letter::after {
-    content: '|';
-    position: absolute;
-    top: 50%;
-    right: -1px;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 4vw;
-    line-height: 48px;
-    pointer-events: none;
-  }
-  /* Remove bar after last letter */
-  .letter:last-child::after {
-    content: '';
-  }
-
 
    /* Only add bars between letters, not before first or after last */
    /* .click-text span:not(:last-child)::after {
@@ -149,7 +132,7 @@
 
   .bottom-strip {
     position: absolute;
-    bottom: 32%;
+    bottom: 30%;
     left: 11%;
     width: 78%;
     font-size: 1vw;
@@ -200,7 +183,7 @@
     z-index: 3;
   }
 
-  .plane-path img.plane {
+  .plane-path img .plane {
     position: absolute;
     height: 30px;
     width: auto;
