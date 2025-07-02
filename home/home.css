@@ -1,5 +1,119 @@
 @import url(/style.css);
 
+nav {
+    width: 100%;
+    height: 10vh;
+    font-family: "Gilroy-Bold";
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav .container {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: white;
+    margin-left: 2.5rem;
+    font-size: 1rem;
+    letter-spacing: .03rem;
+    position: relative;
+}
+
+.navlinks a::after,
+.navlinks .active::after {
+    content: "";
+    background: rgba(233, 165, 8, 255);
+    position: absolute;
+    height: .15rem;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .5s ease;
+    transform-origin: right;
+}
+
+.navlinks a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav .social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+nav .social-links a {
+    font-size: 20px;
+    /* margin-right: 20%; */
+    color: white;
+}
+
+
+
+/* Hides navlinks and shows hamburger on small screens */
+@media (max-width: 1024px) {
+
+    .navlinks,
+    .social-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+    }
+}
+
+/* Show mobile nav menu on click (toggle via JS) */
+@media (max-width: 1024px) {
+    .navlinks.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        z-index: 99;
+    }
+
+    .social-links.active {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
 /* Section One */
 .section-one-home {
     height: 100vh;
@@ -446,10 +560,11 @@
 
 .section-four-home>.row1 h1 {
     font-family: "Gilroy-Bold";
-    font-size: 6vw;    
+    font-size: 6vw;
     color: #E9A408;
     line-height: 0.8;
 }
+
 /*  */
 .section-four-home>.row1 h2 {
     font-family: "Gilroy-Regular";
@@ -1017,4 +1132,283 @@
     }
 }
 
-/* hello */
+a{
+    cursor: pointer;
+}
+/* Footer */
+/* .footer {
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.footer-container {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} */
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+
+.footer-container .logo,
+.footer-container .explore,
+.footer-container .services,
+.footer-container .contact,
+.footer-container .contact-form {
+    flex: 1;
+    padding-top: 5%;
+}
+.footer-container .logo{
+    text-align: center;
+    padding: 3% 0 0 0;
+}
+
+.footer-container .logo img {
+    max-width: 80%;
+}
+
+.footer-container .logo .social-icons a i {
+    color: rgba(233, 165, 8, 255);
+    font-size: 20px;
+    margin-right: 1%;
+}
+
+.footer-container .explore h1,
+.footer-container .services h1,
+.footer-container .contact h1 {
+    color: white;
+    font-family: "Gilroy-Bold";
+    margin-bottom: 5%;
+}
+
+.footer-container .explore a,
+.footer-container .services a {
+    text-decoration: none;
+    color: white;
+    font-family: "Gilroy-Regular";
+}
+
+.footer-container .explore a li,
+.footer-container .services a li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+.footer-container .contact li {
+    list-style: none;
+    color: white;
+    font-family: "Gilroy-Regular";
+    line-height: 1.5;
+
+}
+
+.footer-container .contact li i {
+    color: rgba(233, 165, 8, 255);
+    margin-right: 2%;
+}
+.footer-container .contact-form{
+    line-height: 0.7;
+}
+
+.footer-container .contact-form input,
+.footer-container .contact-form button {
+    background-color: white;
+    width: 60%;
+    padding: 15px 20px;
+    margin: 0 0 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.footer-container .contact-form button {
+    text-align: start;
+}
+
+.footer-container .contact-form button,
+.footer-container .contact-form input::placeholder{
+    color: grey;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+}
+
+.footer-container .contact-form h1{
+    color: gray;
+    font-family: "Gilroy-Bold";
+    font-size: 28px;
+}
+
+
+
+.footer-bottom {
+    height: 5vh;
+    border-top: 1px solid rgba(233, 165, 8, 255);
+}
+
+.footer-bottom p {
+    font-family: "Gilroy-Regular";
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+}
+/* ---------- Responsive for 1024px ---------- */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-container > div {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .footer-container .logo img {
+    max-width: 50%;
+  }
+
+  .footer-container .contact-form input,
+  .footer-container .contact-form button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container > div {
+    max-width: 100%;
+  }
+
+  .footer-container .logo img {
+    max-width: 60%;
+  }
+
+  .footer-container .contact-form input,
+  .footer-container .contact-form button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container .logo img {
+    max-width: 70%;
+  }
+
+  .footer-container .logo .social-icons a i {
+    font-size: 18px;
+    margin: 0 6px;
+  }
+
+  .footer-container .contact-form input,
+  .footer-container .contact-form button {
+    width: 95%;
+  }
+
+  .footer-container h1 {
+    font-size: 18px;
+  }
+
+  .footer-container li,
+  .footer-container a {
+    font-size: 13px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}
+
+
+
+/* @media (max-width: 1024px) {
+  .footer {
+    height: auto;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 40px 5%;
+  }
+
+  .footer-container > div {
+    flex: 1 1 45%;
+    margin-bottom: 30px;
+  }
+
+  .footer-container .contact-form {
+    align-items: flex-start;
+  }
+
+  .footer-container .contact-form input,
+  .footer-container .contact-form button {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    height: auto;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container > div {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-container .contact-form {
+    align-items: center;
+  }
+
+  .footer-container .contact-form input,
+  .footer-container .contact-form button {
+    width: 80%;
+  }
+
+  .footer-container .logo img {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 30px 4%;
+  }
+
+  .footer-container .contact-form input,
+  .footer-container .contact-form button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .footer-container .contact-form h1 {
+    font-size: 22px;
+  }
+
+  .footer-container .logo .social-icons a i {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+    padding: 10px;
+  }
+} */
