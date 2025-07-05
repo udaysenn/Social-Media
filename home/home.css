@@ -1450,76 +1450,83 @@ background-color: #fff;
     color: #f4a300;
 }
 
-.section-seven-home>.container .click-text .letters .letter .inner-sequence span {
-    /* position: relative; */
-}
 
-.section-seven-home>.container .click-text .letters {
+/* Animation Code Start */
+
+.section-seven-home .letters {
     display: flex;
-    /* gap: 10px; */
-}
+    gap: 0px;
+    justify-content: center;
+  }
 
-.section-seven-home>.container .click-text .letters .letter {
-    max-width: 100%;
-    height: 8vw;
-    display: inline-block;
+  .section-seven-home .letter-box {
+    position: relative;
+    height: 144px; /* Adjust*/
     overflow: hidden;
-    font-size: 10vw;
-    /* border-right: 0.3vw solid white; */
-    text-align: center;
+    display: inline-block;
+  }
+  .section-seven-home .letter-box:not(:last-child)::after {
+content: "";
+position: absolute;
+right: 0px;
+top: 10%;
+height: 168px;/* Adjust*/
+width: 2px;
+background-color: #000000;
 }
 
-.section-seven-home>.container .click-text .letters .letter .inner-sequence {
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+
+.section-seven-home .inner-sequence {
+    display: block;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 2s;
-}
+    animation-fill-mode: forwards;
+  }
 
-.section-seven-home>.container .click-text .letters .letter:nth-child(odd) .inner-sequence {
+  .section-seven-home .scroll-down {
     animation-name: scrollDown;
-}
+  }
 
-.section-seven-home>.container .click-text .letters .letter:nth-child(even) .inner-sequence {
+  .section-seven-home .scroll-up {
     animation-name: scrollUp;
-}
+  }
 
-.section-seven-home>.container .click-text .letters .letter .inner-sequence .char {
-    display: block;
-    height: 7.5vw;
-    text-align: center;
-}
+  .section-seven-home .char {
+    font-size: 120px; /* Adjust*/
+    font-weight: bold;
+    font-family: "Gilroy-Black";
+    color: white;
+    /* background-color: #1d1f20; */
+    height: 120px; /* Adjust*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    white-space: nowrap;
+    
+  }
 
-.section-seven-home>.container .click-text .letters .letter .inner-sequence .yellow {
-    color: #E9A408;
-}
+  .section-seven-home .char.yellow {
+    color: #eaa508;
+  }
 
-.section-seven-home>.container .click-text .letters .letter .inner-sequence .white {
-    color: black;
-}
+  .section-seven-home .char.white {
+    color: #000000;
+  }
 
-@keyframes scrollDown {
-    0% {
-        transform: translateY(-400px);
-    }
+  @keyframes scrollDown {
+    0% { transform: translateY(-448px); }
+    100% { transform: translateY(0); }
+  }
 
-    100% {
-        transform: translateY(0);
-    }
-}
+  @keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-448px); }
+  }
 
-@keyframes scrollUp {
-    0% {
-        transform: translateY(0);
-    }
 
-    100% {
-        transform: translateY(-400px);
-        /* 7 lines * 48px */
-    }
-}
+/* Animation Code End */
 
 a {
     cursor: pointer;
