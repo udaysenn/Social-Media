@@ -316,12 +316,12 @@ background-color: #fff;
     animation: scroll 10s linear infinite;
 }
 
+/* New Code For Plane*/
 .plane-icon {
-    height: 1vw;
-    /* Match the text height */
+    height: 14px;  /* Match the text height */
     vertical-align: middle;
     margin: 0 5px;
-}
+  }
 
 @keyframes scroll {
     0% {
@@ -333,60 +333,22 @@ background-color: #fff;
     }
 }
 
-
-/* Plane animation */
-/* .plane-fly {
-    position: absolute;
-    left: -100px;
-    top: -30px;
-    animation: flyPlane 6s ease-in-out infinite alternate;
-    z-index: 2;
-  } */
-
 .plane-path {
     position: absolute;
-    top: 8%;
-    /* matches .screen-content top */
-    left: 13%;
-    /* matches .screen-content left */
+    top: 17%;   /* matches .screen-content top */
+    left: 13%;  /* matches .screen-content left */
     width: 74%;
-    height: 50%;
+    height: 58%;
     pointer-events: none;
     z-index: 3;
-}
+  }
 
-.plane-path img .plane {
+.plane-path img.plane {
     position: absolute;
     height: 30px;
     width: auto;
     animation: orbitAroundClick 8s ease-in-out infinite;
 }
-
-/* 
-  .plane-fly img.plane {
-    height: 30px;
-    width: auto;
-  } */
-
-/* @keyframes flyPlane {
-    0% {
-      transform: translate(0, 0) rotate(-10deg);
-      opacity: 0;
-    }
-    10% {
-      opacity: 1;
-    }
-    50% {
-      transform: translate(450px, -150px) rotate(-5deg);
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      transform: translate(900px, -300px) rotate(0deg);
-      opacity: 0;
-    }
-  } */
 
 @keyframes orbitAroundClick {
     0% {
@@ -424,6 +386,104 @@ background-color: #fff;
         /* back to top-right */
     }
 }
+
+/* Plain Path New */
+
+
+/* .plane-path-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .plane-svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .plane {
+    position: absolute;
+    width: 40px;
+    offset-path: path("M100,300 C200,100 800,100 900,300"); /* same as path 'd' */
+  /*  offset-rotate: auto;
+    animation: flyPath 6s linear infinite;
+  }
+  
+  @keyframes flyPath {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  } */
+  
+  /* .plane {
+    position: absolute;
+    width: 40px;
+    offset-path: path("M815,44 L324,72 L155,142 L112,329 L407,400 L899,360 L194,370 L95,282 L160,145 L343,75 L827,49 L1000,91 L816,44");
+    offset-rotate: auto;
+    animation: flyPath 6s linear infinite;
+  }
+  
+  @keyframes flyPath {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  } */
+
+/* 
+  .plane-path-wrapper {
+    position: absolute;
+    top: 10%; 
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    pointer-events: none;
+    z-index: 5;
+  }
+  
+  .plane {
+    position: absolute;
+    width: 30px;
+    offset-path: path("M809,31 L792,45 L769,55 L741,62 L709,66 L673,67 L634,66 L593,63 L550,60 L505,57 L460,53 L415,50 L371,49 L328,50 L287,53 L248,58 L213,68 L181,81 L154,100 L132,122 L116,149 L106,176 L104,203 L109,227 L123,246 L145,261 L173,272 L208,279 L248,283 L292,284 L339,284 L389,282 L440,280 L491,277");
+    offset-rotate: auto;
+    animation: flyPath 6s linear infinite;
+  } */
+
+  .plane-path-wrapper {
+    position: absolute;
+    top: 15%;     /* thoda neeche */
+    left: 8%;     /* thoda aur andar */
+    width: 84%;   /* kam width, taaki path chhota ho */
+    height: 75%;  /* adjust this to fit vertically */
+    pointer-events: none;
+    z-index: 5;
+  }
+  
+  .plane {
+    position: absolute;
+    width: 30px;
+    offset-path: path("M709,31 L692,45 L669,55 L641,62 L609,66 L573,67 L534,66 L493,63 L450,60 L405,57 L360,53 L315,50 L271,49 L228,50 L187,53 L148,58 L113,68 L81,81 L54,100 L32,122 L16,149 L6,176 L4,203 L9,227 L23,246 L45,261 L73,272 L108,279 L148,283 L192,284 L239,284 L289,282 L340,280 L691,277");
+    offset-rotate: auto;
+    animation: flyPath 6s ease-in-out infinite;
+  }
+  
+  
+  @keyframes flyPath {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
+  
+  
+
 
 /* Section Two */
 .section-two-home {
