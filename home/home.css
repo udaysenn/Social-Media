@@ -148,88 +148,132 @@ nav .social-links a {
     text-align: center;
 
 }
+.text-wrapper {
+    display: inline-block;
+    text-align: center;
+  }
 
 .top-text {
     font-size: 2.5vw;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     font-family: "Gilroy-Medium";
+    white-space: nowrap;
 }
+
+/* .click-text {
+    font-family: "Gilroy-Black";
+    font-size: 3vw;
+    display: flex;
+    color: #f4a300;
+} */
 
 .click-text {
     font-family: "Gilroy-Black";
     font-size: 3vw;
     display: flex;
     color: #f4a300;
-}
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 
-.click-text span {
-    position: relative;
-}
+/*  New Code For Monitor Animation Start*/
 
-.letters {
+/* .letters {
     display: flex;
-    /* gap: 10px; */
-}
+    gap: 0px;
+  } */
 
-.letter {
-    width: 6vw;
-    height: 7vw;
-    display: inline-block;
+  .letters {
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+  }
+
+  .letter-box {
     position: relative;
+    height: 144px; /* Adjust*/
     overflow: hidden;
-    font-size: 10vw;
-    border-right: 0.3vw solid white;
+    display: inline-block;
+  }
+  .letter-box:not(:last-child)::after {
+content: "";
+position: absolute;
+right: 0px;
+top: 10%;
+height: 168px;/* Adjust*/
+width: 2px;
+background-color: #fff;
 }
 
-.inner-sequence {
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+
+  .inner-sequence {
+    display: block;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 2s;
-}
+    animation-fill-mode: forwards;
+  }
 
-
-
-
-.letter:nth-child(odd) .inner-sequence {
+  .scroll-down {
     animation-name: scrollDown;
-}
+  }
 
-.letter:nth-child(even) .inner-sequence {
+  .scroll-up {
     animation-name: scrollUp;
-}
+  }
 
-.char {
-    display: block;
-    height: 16vh;
-    line-height: 15vh;
-    text-align: center;
-}
+  .char {
+    font-size: 120px; /* Adjust*/
+    font-weight: bold;
+    font-family: "Gilroy-Black";
+    color: white;
+    /* background-color: #1d1f20; */
+    height: 120px; /* Adjust*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    white-space: nowrap;
+    
+  }
 
-.char.yellow {
+  .char.yellow {
+    color: #eaa508;
+  }
+
+  @keyframes scrollDown {
+    0% { transform: translateY(-448px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-448px); }
+  }
+
+
+  /*  New Code For Monitor Animation End*/
+
+
+/* .char.yellow {
     color: #f4a300;
 }
 
 .char.white {
     color: white;
-}
+} */
 
-@keyframes scrollDown {
+/* @keyframes scrollDown {
     0% {
         transform: translateY(-336px);
         /* 7 lines * 48px */
-    }
+  /*  }
 
     100% {
         transform: translateY(0);
     }
-}
-
+} */
+/* 
 @keyframes scrollUp {
     0% {
         transform: translateY(0);
@@ -238,8 +282,8 @@ nav .social-links a {
     100% {
         transform: translateY(-336px);
         /* 7 lines * 48px */
-    }
-}
+  /*  }
+} */
 
 
 /* Only add bars between letters, not before first or after last */
@@ -541,77 +585,80 @@ nav .social-links a {
     display: flex;
     color: #f4a300;
 }
+/* New Code Start for Animation*/
 
-.section-three-home>.content .click-text .letters .letter .inner-sequence span {
-    /* position: relative; */
-}
-
-.section-three-home>.content .click-text .letters {
+.section-three-home .letters {
     display: flex;
-    /* gap: 10px; */
-}
+    gap: 0px;
+  }
 
-.section-three-home>.content .click-text .letters .letter {
-    width: 5vw;
-    height: 6vw;
-    display: inline-block;
+  .section-three-home .letter-box {
+    position: relative;
+    height: 96px;
     overflow: hidden;
-    font-size: 9vw;
-    border-right: 0.3vw solid white;
-    text-align: center;
+    display: inline-block;
+  }
+  .section-three-home .letter-box:not(:last-child)::after {
+content: "";
+position: absolute;
+right: 0px;
+top: 10%;
+height: 120px;
+width: 2px;
+background-color: #fff;
 }
 
-.section-three-home>.content .click-text .letters .letter .inner-sequence {
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+
+.section-three-home .inner-sequence {
+    display: block;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 2s;
-}
+    animation-fill-mode: forwards;
+  }
 
-.section-three-home>.content .click-text .letters .letter:nth-child(odd) .inner-sequence {
+  .section-three-home .scroll-down {
     animation-name: scrollDown;
-}
+  }
 
-.section-three-home>.content .click-text .letters .letter:nth-child(even) .inner-sequence {
+  .section-three-home .scroll-up {
     animation-name: scrollUp;
-}
+  }
 
-.section-three-home>.content .click-text .letters .letter .inner-sequence .char {
-    display: block;
-    height: 8vw;
-    text-align: center;
-}
-
-.section-three-home>.content .click-text .letters .letter .inner-sequence .yellow {
-    color: black;
-}
-
-.section-three-home>.content .click-text .letters .letter .inner-sequence .white {
+  .section-three-home .char {
+    font-size: 72px;
+    font-weight: bold;
+    font-family: "Gilroy-Black";
     color: white;
-}
+    /* background-color: #1d1f20; */
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    white-space: nowrap;
+    
+  }
 
-@keyframes scrollDown {
-    0% {
-        transform: translateY(-400px);
-    }
+  .section-three-home  .char.yellow {
+    color: #000000;
+  }
 
-    100% {
-        transform: translateY(0);
-    }
-}
+  @keyframes scrollDown {
+    0% { transform: translateY(-448px); }
+    100% { transform: translateY(0); }
+  }
 
-@keyframes scrollUp {
-    0% {
-        transform: translateY(0);
-    }
+  @keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-448px); }
+  }
 
-    100% {
-        transform: translateY(-400px);
-        /* 7 lines * 48px */
-    }
-}
+  /* New Code End for Animation*/
+
+
+
+
 
 .section-three-home>.mobile-slider img {
     width: 70%;
@@ -677,7 +724,7 @@ nav .social-links a {
         display: inline-block;
         overflow: hidden;
         font-size: 15vw;
-        border-right: 0.3vw solid white;
+        /* border-right: 0.3vw solid white; */
         text-align: center;
     }
 
@@ -761,76 +808,101 @@ nav .social-links a {
     color: #f4a300;
 }
 
-.section-four-home>.row1 .click-text .letters .letter .inner-sequence span {
-    /* position: relative; */
-}
 
-.section-four-home>.row1 .click-text .letters {
+
+
+
+
+
+
+  /* New Code Start For Animation */
+
+  .section-four-home  .letters {
     display: flex;
-    /* gap: 10px; */
-}
+    gap: 0px;
+  }
 
-.section-four-home>.row1 .click-text .letters .letter {
-    width: 5vw;
-    height: 6vw;
-    display: inline-block;
+  .section-four-home  .letter-box {
+    position: relative;
+    height: 72px;
     overflow: hidden;
-    font-size: 6vw;
-    border-right: 0.3vw solid white;
-    text-align: center;
+    display: inline-block;
+  }
+  .section-four-home  .letter-box:not(:last-child)::after {
+content: "";
+position: absolute;
+right: 0px;
+top: 10%;
+height: 96px;
+width: 2px;
+background-color: #fff;
 }
 
-.section-four-home>.row1 .click-text .letters .letter .inner-sequence {
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+
+.section-four-home  .inner-sequence {
+    display: block;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 2s;
-}
+    animation-fill-mode: forwards;
+  }
 
-.section-four-home>.row1 .click-text .letters .letter:nth-child(odd) .inner-sequence {
+  .section-four-home  .scroll-down {
     animation-name: scrollDown;
-}
+  }
 
-.section-four-home>.row1 .click-text .letters .letter:nth-child(even) .inner-sequence {
+  .section-four-home  .scroll-up {
     animation-name: scrollUp;
-}
+  }
 
-.section-four-home>.row1 .click-text .letters .letter .inner-sequence .char {
-    display: block;
-    height: 5vw;
-    text-align: center;
-}
-
-.section-four-home>.row1 .click-text .letters .letter .inner-sequence .yellow {
-    color: #E9A408;
-}
-
-.section-four-home>.row1 .click-text .letters .letter .inner-sequence .white {
+  .section-four-home  .char {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Gilroy', sans-serif;
     color: white;
-}
+    background-color: #1d1f20;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    white-space: nowrap;
+    
+  }
 
-@keyframes scrollDown {
-    0% {
-        transform: translateY(-400px);
-    }
+  .section-four-home  .char.yellow {
+    color: #eaa508;
+  }
 
-    100% {
-        transform: translateY(0);
-    }
-}
+  @keyframes scrollDown {
+    0% { transform: translateY(-448px); }
+    100% { transform: translateY(0); }
+  }
 
-@keyframes scrollUp {
-    0% {
-        transform: translateY(0);
-    }
+  @keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-448px); }
+  }
+  /* New Code End For Animation */
+  
 
-    100% {
-        transform: translateY(-400px);
-        /* 7 lines * 48px */
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-four-home>.row1 h2 {
     font-family: "Gilroy-Regular";
@@ -1040,7 +1112,7 @@ nav .social-links a {
     padding: 2vw;
     display: inline-block;
     white-space: nowrap;
-    animation: marquee-scroll 10s linear infinite;
+    animation: marquee-scroll 20s linear infinite;
 }
 
 @keyframes marquee-scroll {
@@ -1058,7 +1130,7 @@ nav .social-links a {
 }
 
 .section-five-home>.brands .border {
-    border-right: 2px solid #E9A408;
+    /* border-right: 2px solid #E9A408; */
 }
 
 .section-five-home>.content {
@@ -1393,7 +1465,7 @@ nav .social-links a {
     display: inline-block;
     overflow: hidden;
     font-size: 10vw;
-    border-right: 0.3vw solid white;
+    /* border-right: 0.3vw solid white; */
     text-align: center;
 }
 
